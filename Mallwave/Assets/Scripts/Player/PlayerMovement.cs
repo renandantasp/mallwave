@@ -1,5 +1,3 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,23 +6,30 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _moveDirection;
     private Vector2 _lastDirection;
     private bool _isRunning;
+
+    [HideInInspector]
+    public bool canWalk;
     
-    [SerializeField] private float _speed;
+    [SerializeField] 
+    private float _speed;
 
     public Animator Animator { get; private set; }
     
     void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
-        Animator = GetComponent<Animator>();
-        _speed = 150;
+        this._rb = GetComponent<Rigidbody2D>();
+        this.Animator = GetComponent<Animator>();
+        this._speed = 150;
+        this.canWalk = true;
     }
     
 
-    // Update is called once per frame
     void Update()
     {
-        ProcessInput();
+        if (this.canWalk)
+        {
+            ProcessInput();
+        }
     }
 
     void FixedUpdate()
