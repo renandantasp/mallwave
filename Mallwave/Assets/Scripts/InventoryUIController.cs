@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,33 +6,74 @@ using UnityEngine;
 public class InventoryUIController : MonoBehaviour
 {
     [SerializeField]
-    private InventoryPage _inventoryUI;
-    
+    private InventoryPage inventoryUI;
+
     [SerializeField]
-    private int _size;
+    private InventorySO inventoryData;
 
     [HideInInspector]
-    public bool _isInventoryOpen = false;
+    public bool isInventoryOpen = false;
     
     void Start()
     {
-        _inventoryUI.InitializeInventory(_size);
+        PrepareUI();
+    }
+
+    private void PrepareUI()
+    {
+        this.inventoryUI.InitializeInventory(inventoryData.Size);
+        this.inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
+        this.inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+        this.inventoryUI.OnStartedDragging += HandleDragging;
+        this.inventoryUI.OnSwapItems += HandleSwapItems;
 
     }
 
-    // Update is called once per frame
+    private void HandleDescriptionRequest(int itemIndex)
+    {
+        Item inventoryItem = this.inventoryData.GetItemAt(itemIndex);
+        if (inventoryItem.IsEmpty)
+        {
+            inventoryUI.ResetSelection();
+            return;
+        }
+        ItemSO item = inventoryItem.item;
+        inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
+    }
+    private void HandleItemActionRequest(int itemIndex)
+    {
+        throw new NotImplementedException();
+    }
+
+    private void HandleDragging(int itemIndex)
+    {
+        throw new NotImplementedException();
+    }
+    private void HandleSwapItems(int index1, int index2)
+    {
+        throw new NotImplementedException();
+    }
+
+
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            if (!_inventoryUI.isActiveAndEnabled)
+            if (!inventoryUI.isActiveAndEnabled)
             {
-                _inventoryUI.Show();
-                _isInventoryOpen = true;
+                inventoryUI.Show();
+                isInventoryOpen = true;
+                foreach (var item in inventoryData.GetCurrentInventoryState())
+                {
+                    inventoryUI.UpdateData(item.Key,
+                        item.Value.item.ItemImage,
+                        item.Value.quantity);
+                }
             } else
             {
-                _inventoryUI.Hide();
-                _isInventoryOpen = false;
+                inventoryUI.Hide();
+                isInventoryOpen = false;
             }
         }
 

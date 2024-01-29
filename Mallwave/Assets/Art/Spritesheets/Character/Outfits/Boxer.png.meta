@@ -1374,7 +1374,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boxer_5: -700629889
+      Boxer_22: 538342081
       Boxer_23: 615017246
       Boxer_0: 509856255
       Boxer_15: -1964489878
@@ -1432,8 +1432,8 @@ TextureImporter:
       Boxer_33: -1195173089
       Boxer_56: 175587771
       Boxer_54: 483566416
-      Boxer_22: 538342081
       Boxer_43: 1001950908
+      Boxer_5: -700629889
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

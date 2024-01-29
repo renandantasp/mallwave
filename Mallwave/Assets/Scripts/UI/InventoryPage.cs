@@ -79,7 +79,6 @@ public class InventoryPage : MonoBehaviour
 
     }
 
-
     private void HandleShowItemActions(InventoryItem item)
     {
         Debug.Log("Show Item Actions");
@@ -120,7 +119,7 @@ public class InventoryPage : MonoBehaviour
 
     }
 
-    private void ResetSelection()
+    public void ResetSelection()
     {
         _inventoryDescription.ResetDescription();
         DeselectAllItems();
@@ -140,4 +139,11 @@ public class InventoryPage : MonoBehaviour
         Debug.Log("Hide");
     }
 
+    public void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+    {
+        
+        this._inventoryDescription.SetDescription(itemImage, name, description);
+        DeselectAllItems();
+        _items[itemIndex].Select();
+    }
 }

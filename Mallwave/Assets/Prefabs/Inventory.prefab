@@ -385,7 +385,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -445,7 +445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3796745041567353706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -675,10 +675,7 @@ MonoBehaviour:
   _itemPrefab: {fileID: 4218209194393731667, guid: c3fa65b574c45ab478f2276fc5ffeff8, type: 3}
   _contentPanel: {fileID: 3796745040986504355}
   _inventoryDescription: {fileID: 1702112581595678564}
-  sprite: {fileID: -1043295750, guid: e6e626e3e044e0246875571617057c50, type: 3}
-  quantity: 1
-  title: Boy
-  description: Just a little boy
+  _follower: {fileID: 0}
 --- !u!1 &3796745041942984034
 GameObject:
   m_ObjectHideFlags: 0

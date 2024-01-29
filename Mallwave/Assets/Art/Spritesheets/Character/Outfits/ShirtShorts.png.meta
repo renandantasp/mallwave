@@ -1471,7 +1471,7 @@ TextureImporter:
       ShirtShorts_4: -1703694043
       ShirtShorts_14: 612178156
       ShirtShorts_51: 1273080901
-      ShirtShorts_36: -1998503499
+      ShirtShorts_23: -964757337
       ShirtShorts_55: -313602011
       ShirtShorts_46: -1434994862
       ShirtShorts_35: -395371972
@@ -1490,8 +1490,8 @@ TextureImporter:
       ShirtShorts_13: -2034720090
       ShirtShorts_11: -1574363433
       ShirtShorts_45: -27335690
-      ShirtShorts_42: -371118362
       ShirtShorts_41: 607413631
+      ShirtShorts_42: -371118362
       ShirtShorts_49: 2074658879
       ShirtShorts_48: -1905636234
       ShirtShorts_50: -1421074417
@@ -1518,10 +1518,10 @@ TextureImporter:
       ShirtShorts_56: -173667537
       ShirtShorts_2: -1457579445
       ShirtShorts_16: -1633632380
+      ShirtShorts_36: -1998503499
       ShirtShorts_60: -1868047063
-      ShirtShorts_23: -964757337
-      ShirtShorts_53: -333565819
       ShirtShorts_21: -436456855
+      ShirtShorts_53: -333565819
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

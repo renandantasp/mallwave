@@ -19,6 +19,40 @@ public class InventorySO : ScriptableObject
         {
             inventoryItems.Add(Item.GetEmptyItem());
         }
+    }
+
+    public void AddItem(ItemSO item, int quantity)
+    {
+        for (int i = 0; i < Size; i++)
+        {
+            if (inventoryItems[i].IsEmpty)
+            {
+                inventoryItems[i] = new Item
+                {
+                    item = item,
+                    quantity=quantity
+                };
+            }
+        }
+    }
+
+    public Dictionary<int, Item> GetCurrentInventoryState()
+    {
+        Dictionary<int, Item> currState = new Dictionary<int, Item>();
+        for (int i = 0; i < inventoryItems.Count; i++)
+        {
+            if (inventoryItems[i].IsEmpty) continue;
+            currState[i] = inventoryItems[i];
+
+        }
+        return currState;
+    }
+
+    public Item GetItemAt(int index)
+    {
+        if (inventoryItems[index].IsEmpty) return Item.GetEmptyItem();
+        return inventoryItems[index];
+    }
 }
 
 
