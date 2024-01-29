@@ -1,81 +1,111 @@
+using Inventory.Model;
+using Inventory.UI;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryUIController : MonoBehaviour
+namespace Inventory
 {
-    [SerializeField]
-    private InventoryPage inventoryUI;
-
-    [SerializeField]
-    private InventorySO inventoryData;
-
-    [HideInInspector]
-    public bool isInventoryOpen = false;
-    
-    void Start()
+    public class InventoryUIController : MonoBehaviour
     {
-        PrepareUI();
-    }
+        [SerializeField]
+        private InventoryPage inventoryUI;
 
-    private void PrepareUI()
-    {
-        this.inventoryUI.InitializeInventory(inventoryData.Size);
-        this.inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
-        this.inventoryUI.OnItemActionRequested += HandleItemActionRequest;
-        this.inventoryUI.OnStartedDragging += HandleDragging;
-        this.inventoryUI.OnSwapItems += HandleSwapItems;
+        [SerializeField]
+        private InventorySO inventoryData;
 
-    }
+        [HideInInspector]
+        public bool isInventoryOpen = false;
 
-    private void HandleDescriptionRequest(int itemIndex)
-    {
-        Item inventoryItem = this.inventoryData.GetItemAt(itemIndex);
-        if (inventoryItem.IsEmpty)
+        public List<Item> initialItems = new List<Item>();
+
+        void Start()
         {
-            inventoryUI.ResetSelection();
-            return;
+            PrepareUI();
+            PrepareInventoryData();
         }
-        ItemSO item = inventoryItem.item;
-        inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
-    }
-    private void HandleItemActionRequest(int itemIndex)
-    {
-        throw new NotImplementedException();
-    }
 
-    private void HandleDragging(int itemIndex)
-    {
-        throw new NotImplementedException();
-    }
-    private void HandleSwapItems(int index1, int index2)
-    {
-        throw new NotImplementedException();
-    }
-
-
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
+        private void PrepareInventoryData()
         {
-            if (!inventoryUI.isActiveAndEnabled)
+            //inventoryData.Initialize();
+            inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+            //foreach (Item item in inventoryData.inventoryItems)
+            //{
+            //    if (item.IsEmpty) continue;
+            //    inventoryData.AddItem(item.item, item.quantity);
+            //}
+        }
+
+        private void UpdateInventoryUI(Dictionary<int, Item> inventoryState)
+        {
+            inventoryUI.ResetAllItems();
+            foreach (var item in inventoryState)
             {
-                inventoryUI.Show();
-                isInventoryOpen = true;
-                foreach (var item in inventoryData.GetCurrentInventoryState())
-                {
-                    inventoryUI.UpdateData(item.Key,
-                        item.Value.item.ItemImage,
-                        item.Value.quantity);
-                }
-            } else
-            {
-                inventoryUI.Hide();
-                isInventoryOpen = false;
+                inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, 
+                    item.Value.quantity);
             }
         }
 
+        private void PrepareUI()
+        {
+            inventoryUI.InitializeInventory(inventoryData.Size);
+            inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
+            inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+            inventoryUI.OnStartedDragging += HandleDragging;
+            inventoryUI.OnSwapItems += HandleSwapItems;
+        }
+
+        private void HandleDescriptionRequest(int itemIndex)
+        {
+            Item inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+            {
+                inventoryUI.ResetSelection();
+                return;
+            }
+            ItemSO item = inventoryItem.item;
+            inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
+        }
+        private void HandleItemActionRequest(int itemIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void HandleDragging(int itemIndex)
+        {
+            Item item = inventoryData.GetItemAt(itemIndex);
+            if (item.IsEmpty) return;
+            inventoryUI.CreateDraggedItem(item.item.ItemImage, item.quantity);
+        }
+        private void HandleSwapItems(int index1, int index2)
+        {
+            inventoryData.SwapItems(index1, index2);
+        }
+
+
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                if (!inventoryUI.isActiveAndEnabled)
+                {
+                    inventoryUI.Show();
+                    isInventoryOpen = true;
+                    foreach (var item in inventoryData.GetCurrentInventoryState())
+                    {
+                        inventoryUI.UpdateData(item.Key,
+                            item.Value.item.ItemImage,
+                            item.Value.quantity);
+                    }
+                }
+                else
+                {
+                    inventoryUI.Hide();
+                    isInventoryOpen = false;
+                }
+            }
+
+        }
     }
 }
