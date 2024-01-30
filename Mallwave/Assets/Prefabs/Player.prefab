@@ -386,6 +386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canWalk: 0
+  isTalking: 0
+  isPaused: 0
   _speed: 190
 --- !u!1 &2006629333585054482
 GameObject:
@@ -402,6 +404,7 @@ GameObject:
   - component: {fileID: 2006629333585054484}
   - component: {fileID: 2006629333585054485}
   - component: {fileID: 5418499887662303713}
+  - component: {fileID: 705263012077646188}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -562,6 +565,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUIController: {fileID: 0}
+  playerMovement: {fileID: 0}
+  mainMenu: {fileID: 0}
+  mainRectTransform: {fileID: 0}
 --- !u!114 &5418499887662303713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,6 +582,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clothesRenderer: {fileID: 2006629332252949487}
   itemsEquipped: {fileID: 11400000, guid: d6ac3d016c2dd234ba384272d24923cc, type: 2}
+--- !u!114 &705263012077646188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006629333585054482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53cdd02b77f63ba4bad4b32aec0a4524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7501847308986900300
 GameObject:
   m_ObjectHideFlags: 0

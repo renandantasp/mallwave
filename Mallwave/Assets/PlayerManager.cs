@@ -10,13 +10,54 @@ public class PlayerManager : MonoBehaviour
     public InventoryUIController inventoryUIController;
     [HideInInspector]
     public PlayerMovement playerMovement;
+    [SerializeField]
+    private MainMenuManager mainMenu;
+
+    [SerializeField]
+    private RectTransform mainRectTransform;
     //public Animator clothAnimator, headWearAnimator, playerAnimator;
-    
+
     void Start()
     {
         inventoryUIController = GetComponentInChildren<InventoryUIController>();
         playerMovement = GetComponentInChildren<PlayerMovement>();
+        mainMenu = GetComponent<MainMenuManager>();
 
+    }
+
+    private void Update()
+    {
+        if (playerMovement.isPaused)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                mainRectTransform.gameObject.SetActive(false);
+                DisablePause();
+            }
+
+        } else
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                mainRectTransform.gameObject.SetActive(true);
+                EnablePause();
+            }
+        }
+    }
+
+    public void ResumeGame()
+    {
+        mainRectTransform.gameObject.SetActive(false);
+        DisablePause();
+    }
+
+    public void EnablePause()
+    {
+        playerMovement.isPaused = true;
+    }
+    public void DisablePause()
+    {
+        playerMovement.isPaused = false;
     }
 
     public void EnableTalk()

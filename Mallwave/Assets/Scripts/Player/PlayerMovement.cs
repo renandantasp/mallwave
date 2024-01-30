@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     [HideInInspector]
     public bool isTalking;
+    [HideInInspector]
+    public bool isPaused;
 
     [SerializeField]
     private float _speed;
@@ -45,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckWalk()
     {
-        this.canWalk = !(_manager.inventoryUIController.isInventoryOpen || isTalking);
+        this.canWalk = !(_manager.inventoryUIController.isInventoryOpen || isTalking || isPaused);
     }
 
     void FixedUpdate()
