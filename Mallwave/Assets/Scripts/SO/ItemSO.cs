@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Inventory.Model
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(menuName = "Sciptable Objects/Item/Base Item")]
     public class ItemSO : ScriptableObject
     {
         public int ID => GetInstanceID();

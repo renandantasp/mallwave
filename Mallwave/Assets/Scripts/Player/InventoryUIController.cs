@@ -17,7 +17,6 @@ namespace Inventory
         [HideInInspector]
         public bool isInventoryOpen = false;
 
-        public List<Item> initialItems = new List<Item>();
 
         void Start()
         {
@@ -35,7 +34,7 @@ namespace Inventory
             inventoryUI.ResetAllItems();
             foreach (var item in inventoryState)
             {
-                inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, 
+                inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage,
                     item.Value.quantity);
             }
         }
@@ -46,8 +45,8 @@ namespace Inventory
             inventoryUI.InitializeInventory(inventoryData.Size);
             inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
             inventoryUI.OnItemActionRequested += HandleItemActionRequest;
-            inventoryUI.OnStartedDragging += HandleDragging;
-            inventoryUI.OnSwapItems += HandleSwapItems;
+            // inventoryUI.OnStartedDragging += HandleDragging;
+            // inventoryUI.OnSwapItems += HandleSwapItems;
         }
 
         private void HandleDescriptionRequest(int itemIndex)
@@ -63,8 +62,15 @@ namespace Inventory
         }
         private void HandleItemActionRequest(int itemIndex)
         {
-            throw new NotImplementedException();
+            Item item = inventoryData.GetItemAt(itemIndex);
+            if (item.IsEmpty) return;
+            IItemAction itemAction = item.item as IItemAction;
+            if (itemAction != null)
+            {
+                itemAction.PerformAction(gameObject);
+            }
         }
+
 
         private void HandleDragging(int itemIndex)
         {

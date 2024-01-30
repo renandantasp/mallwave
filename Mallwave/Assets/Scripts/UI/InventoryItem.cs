@@ -14,7 +14,6 @@ namespace Inventory.UI
         [SerializeField]
         private Image _itemImage;
 
-
         [SerializeField]
         private TMP_Text _quantity;
 

@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Inventory.Model {
 
-    [CreateAssetMenu]
+    [CreateAssetMenu (menuName="Sciptable Objects/Inventory")]
     public class InventorySO : ScriptableObject
     {        
         public List<Item> inventoryItems;
@@ -62,6 +62,21 @@ namespace Inventory.Model {
             return 0;
             
         }
+
+        public void RemoveItem(int itemIndex, int quantity)
+        {
+            if (inventoryItems.Count > 0)
+            {
+                if (inventoryItems[itemIndex].IsEmpty) return;
+                int newQuantity = inventoryItems[itemIndex].quantity - quantity;
+                if ( newQuantity <=0)
+                    inventoryItems[itemIndex] = Item.GetEmptyItem();
+                else
+                    inventoryItems[itemIndex].ChangeQuantity(newQuantity);
+                InformAboutChange();
+            }
+        }
+
 
         private bool IsInventoryFull() =>
            inventoryItems.Where(item => item.IsEmpty).Any() == false;

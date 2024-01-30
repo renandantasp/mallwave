@@ -11,12 +11,15 @@ public class PlayerMovement : MonoBehaviour
 
     [HideInInspector]
     public bool canWalk;
-    
-    [SerializeField] 
+
+    [HideInInspector]
+    public bool isTalking;
+
+    [SerializeField]
     private float _speed;
 
     public Animator Animator { get; private set; }
-    
+
     void Start()
     {
         this._rb = GetComponentInParent<Rigidbody2D>();
@@ -25,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         this._speed = 150;
         this.canWalk = true;
     }
-    
+
 
     void Update()
     {
@@ -42,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckWalk()
     {
-        this.canWalk = !_manager.inventoryUIController.isInventoryOpen;
+        this.canWalk = !(_manager.inventoryUIController.isInventoryOpen || isTalking);
     }
 
     void FixedUpdate()

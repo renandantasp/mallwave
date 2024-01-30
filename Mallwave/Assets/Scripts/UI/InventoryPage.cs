@@ -84,8 +84,9 @@ namespace Inventory.UI
 
         private void HandleShowItemActions(InventoryItem item)
         {
-            Debug.Log("Show Item Actions");
-
+            int index = _items.IndexOf(item);
+            if (index == -1) return;
+            OnItemActionRequested?.Invoke(index);
         }
 
         private void HandleBeginDrag(InventoryItem item)
