@@ -8,6 +8,7 @@ public class Interactor : MonoBehaviour
     public InventorySO shopkeeperInventory;
 
     public ShopPage shopUI;
+    public ShopUIController shopUIController;
 
     public ShopkeeperPage shopkeeperPage;
 
@@ -18,9 +19,6 @@ public class Interactor : MonoBehaviour
     {
         canInteract = false;
         shopkeeperPage.gameObject.SetActive(false);
-        shopUI.Hide();
-
-
     }
 
     void Update()
@@ -50,14 +48,14 @@ public class Interactor : MonoBehaviour
 
     public void OnClickBuy()
     {
-        shopUI.Show();
+        shopUIController.Setup(true);
         shopkeeperPage.gameObject.SetActive(false);
 
     }
 
     public void OnClickSell()
     {
-        shopUI.Show();
+        shopUIController.Setup(false);
         shopkeeperPage.gameObject.SetActive(false);
 
 

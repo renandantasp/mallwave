@@ -3734,15 +3734,15 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3796745041752201289, guid: 835d142c2517d03479685490e5076139, type: 3}
   m_PrefabInstance: {fileID: 984044032}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &936435466 stripped
+--- !u!114 &936435470 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8569950431606491808, guid: 835d142c2517d03479685490e5076139, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8372027382333755240, guid: 835d142c2517d03479685490e5076139, type: 3}
   m_PrefabInstance: {fileID: 984044032}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18fb2b93798fc0a40b5a79d665abf281, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4b584189cdc744ab7e1a9cb44ef9d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &949373515
@@ -4984,7 +4984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopkeeperInventory: {fileID: 11400000, guid: 03efa58eb95cae44b8b8f294f6eff93a, type: 2}
-  shopUI: {fileID: 936435466}
+  shopUI: {fileID: 936435470}
   shopkeeperPage: {fileID: 418662789}
   playerManager: {fileID: 1769511573}
 --- !u!212 &1759346838
@@ -5067,7 +5067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d49ee12005b3474fb5c3ecf2e6bdd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 936435466}
+  inventoryUI: {fileID: 936435470}
   inventoryData: {fileID: 11400000, guid: 03efa58eb95cae44b8b8f294f6eff93a, type: 2}
   isInventoryOpen: 0
 --- !u!114 &1769511573 stripped

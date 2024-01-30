@@ -7,30 +7,50 @@ using UnityEngine;
 public class ShopUIController : MonoBehaviour
 {
     [SerializeField]
-    private InventoryPage inventoryUI;
+    private ShopPage inventoryUI;
 
     [SerializeField]
-    private InventorySO inventoryData;
+    private InventorySO shopkeeperData;
+
+    [SerializeField]
+    private InventorySO playerData;
+
+    private InventorySO buyerData, sellerData;
 
     [HideInInspector]
     public bool isInventoryOpen = false;
 
-    void Start()
+    private void Start()
     {
+        inventoryUI.Hide();
+    }
+    public void Setup(bool isBuy)
+    {
+        if (isBuy)
+        {
+            buyerData = shopkeeperData;
+            sellerData = playerData;
+        }
+        else
+        {
+            buyerData = playerData;
+            sellerData = shopkeeperData;
+        }
         PrepareUI();
         PrepareInventoryData();
+        inventoryUI.Show();
     }
 
     private void PrepareInventoryData()
     {
-        inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+        buyerData.OnInventoryUpdated += UpdateInventoryUI;
         OnSetActive();
 
     }
 
     public void OnSetActive()
     {
-        foreach (var item in inventoryData.GetCurrentInventoryState())
+        foreach (var item in buyerData.GetCurrentInventoryState())
         {
             inventoryUI.UpdateData(item.Key,
                 item.Value.item.ItemImage,
@@ -50,34 +70,25 @@ public class ShopUIController : MonoBehaviour
 
     private void PrepareUI()
     {
-        isInventoryOpen = false;
-        inventoryUI.InitializeInventory(inventoryData.Size);
+        inventoryUI.InitializeInventory(buyerData.Size);
         inventoryUI.OnDescriptionRequested += HandleDescription;
         inventoryUI.OnItemActionRequested += HandleItemAction;
-        Debug.Log("Preparing UI");
     }
 
     private void HandleDescription(int itemIndex)
     {
-        Debug.Log(inventoryData.inventoryItems[itemIndex]);
-        Item inventoryItem = inventoryData.GetItemAt(itemIndex);
+        Item inventoryItem = buyerData.GetItemAt(itemIndex);
         if (inventoryItem.IsEmpty)
         {
             inventoryUI.ResetSelection();
             return;
         }
         ItemSO item = inventoryItem.item;
-        inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
+        string showDescription = item.Description + $"\nPrice: {item.Price}";
+        inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description + $"\nPrice: {item.Price}");
     }
     private void HandleItemAction(int itemIndex)
     {
-        Debug.Log(inventoryData.inventoryItems[itemIndex]);
-        Item item = inventoryData.GetItemAt(itemIndex);
-        if (item.IsEmpty) return;
-        IItemAction itemAction = item.item as IItemAction;
-        if (itemAction != null)
-        {
-            itemAction.PerformAction(gameObject);
-        }
+        Debug.Log(itemIndex);
     }
 }
