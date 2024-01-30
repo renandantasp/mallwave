@@ -14,6 +14,9 @@ namespace Inventory.Model
         public string Name { get; set; }
 
         [field: SerializeField]
+        public int Price { get; set; }
+
+        [field: SerializeField]
         [field: TextArea]
         public string Description { get; set; }
 

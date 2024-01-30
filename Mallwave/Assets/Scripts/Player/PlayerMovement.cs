@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -6,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _moveDirection;
     private Vector2 _lastDirection;
     private bool _isRunning;
+    private PlayerManager _manager;
 
     [HideInInspector]
     public bool canWalk;
@@ -17,8 +19,9 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {
-        this._rb = GetComponent<Rigidbody2D>();
-        this.Animator = GetComponent<Animator>();
+        this._rb = GetComponentInParent<Rigidbody2D>();
+        this._manager = GetComponentInParent<PlayerManager>();
+        this.Animator = GetComponentInParent<Animator>();
         this._speed = 150;
         this.canWalk = true;
     }
@@ -26,10 +29,20 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        CheckWalk();
         if (this.canWalk)
         {
             ProcessInput();
         }
+        else
+        {
+            _moveDirection = Vector2.zero;
+        }
+    }
+
+    private void CheckWalk()
+    {
+        this.canWalk = !_manager.inventoryUIController.isInventoryOpen;
     }
 
     void FixedUpdate()
@@ -55,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
         }
         Animator.SetFloat("Horizontal", _lastDirection.x);
         Animator.SetFloat("Vertical", _lastDirection.y);
-        //Animator.SetFloat("speed", _moveDirection.sqrMagnitude);
         
 
     }
@@ -65,4 +77,6 @@ public class PlayerMovement : MonoBehaviour
         float final_speed = _isRunning ? _speed * 2f : _speed;
         _rb.velocity = _moveDirection * final_speed * Time.deltaTime;
     }
+
+    
 }

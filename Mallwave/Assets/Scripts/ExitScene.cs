@@ -9,6 +9,9 @@ public class ExitScene : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D player)
     {
-        SceneManager.LoadScene(sceneName);
+        if (player.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }

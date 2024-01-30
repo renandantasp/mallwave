@@ -27,13 +27,7 @@ namespace Inventory
 
         private void PrepareInventoryData()
         {
-            //inventoryData.Initialize();
             inventoryData.OnInventoryUpdated += UpdateInventoryUI;
-            //foreach (Item item in inventoryData.inventoryItems)
-            //{
-            //    if (item.IsEmpty) continue;
-            //    inventoryData.AddItem(item.item, item.quantity);
-            //}
         }
 
         private void UpdateInventoryUI(Dictionary<int, Item> inventoryState)
@@ -48,6 +42,7 @@ namespace Inventory
 
         private void PrepareUI()
         {
+            isInventoryOpen = false;
             inventoryUI.InitializeInventory(inventoryData.Size);
             inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
             inventoryUI.OnItemActionRequested += HandleItemActionRequest;
