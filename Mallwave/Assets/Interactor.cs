@@ -15,6 +15,7 @@ public class Interactor : MonoBehaviour
     [SerializeField]
     private PlayerManager playerManager;
 
+
     void Start()
     {
         canInteract = false;
@@ -58,8 +59,8 @@ public class Interactor : MonoBehaviour
         shopUIController.Setup(false);
         shopkeeperPage.gameObject.SetActive(false);
 
-
     }
+
     void OnTriggerEnter2D(Collider2D player)
     {
         canInteract = true;

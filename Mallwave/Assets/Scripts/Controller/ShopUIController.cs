@@ -1,8 +1,10 @@
 using Inventory.Model;
 using Inventory.UI;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShopUIController : MonoBehaviour
 {
@@ -17,8 +19,13 @@ public class ShopUIController : MonoBehaviour
 
     private InventorySO buyerData, sellerData;
 
+    
+
     [HideInInspector]
     public bool isInventoryOpen = false;
+
+    private bool isBuy;
+    private int selectedItemIndex = -1;
 
     private void Start()
     {
@@ -26,7 +33,10 @@ public class ShopUIController : MonoBehaviour
     }
     public void Setup(bool isBuy)
     {
-        if (isBuy)
+        this.isBuy = isBuy;
+        selectedItemIndex = -1;
+
+        if (this.isBuy)
         {
             buyerData = shopkeeperData;
             sellerData = playerData;
@@ -36,14 +46,18 @@ public class ShopUIController : MonoBehaviour
             buyerData = playerData;
             sellerData = shopkeeperData;
         }
+        inventoryUI.UpdateButton(this.isBuy);
+        inventoryUI.ResetAllItems();
         PrepareUI();
         PrepareInventoryData();
         inventoryUI.Show();
+
     }
 
     private void PrepareInventoryData()
     {
         buyerData.OnInventoryUpdated += UpdateInventoryUI;
+        sellerData.OnInventoryUpdated += UpdateInventoryUI;
         OnSetActive();
 
     }
@@ -63,6 +77,11 @@ public class ShopUIController : MonoBehaviour
         inventoryUI.ResetAllItems();
         foreach (var item in inventoryState)
         {
+            Debug.Log(item.Value.item.Name);
+            if (item.Value.item.Name == "Mall Coins")
+            {
+                continue;
+            }
             inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage,
                 item.Value.quantity);
         }
@@ -84,11 +103,31 @@ public class ShopUIController : MonoBehaviour
             return;
         }
         ItemSO item = inventoryItem.item;
-        string showDescription = item.Description + $"\nPrice: {item.Price}";
-        inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description + $"\nPrice: {item.Price}");
+        selectedItemIndex = itemIndex;
+        string newDescription = item.Description + $"\nPrice: {item.Price}";
+        newDescription += $"\nYour Money: {playerData.Money}";
+        inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, newDescription);
     }
     private void HandleItemAction(int itemIndex)
     {
         Debug.Log(itemIndex);
     }
+
+    public void TradeItem()
+    {
+        if (selectedItemIndex == -1) return;
+        Item item = buyerData.GetItemAt(selectedItemIndex);
+
+        sellerData.AddItem(item.item, 1);
+        buyerData.RemoveItem(selectedItemIndex, 1);
+        if (this.isBuy)
+        {
+            playerData.Money -= item.item.Price;
+        } else
+        {
+            playerData.Money += item.item.Price;
+        }
+    }
+
+
 }

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 1
   <Name>k__BackingField: Mall Coins
+  <Price>k__BackingField: 1
   <Description>k__BackingField: The main currency of Mall City
   <ItemImage>k__BackingField: {fileID: 1856649228, guid: c4241c3b53dced44cb236806a4570a10, type: 3}

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b163ffb2eebd804799ce6246db206f0, type: 3}
   m_Name: PlayerEquip
   m_EditorClassIdentifier: 
-  clothEquipped: {fileID: 0}
+  clothEquipped: {fileID: 11400000, guid: b4b750a93319c8e4fbb289c399ef23fc, type: 2}

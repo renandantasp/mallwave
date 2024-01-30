@@ -22,7 +22,7 @@ namespace Inventory.Model {
                 inventoryItems.Add(Item.GetEmptyItem());
             }
         }
-
+        public int Money;
         public event Action<Dictionary<int, Item>> OnInventoryUpdated;
         public int AddItem(ItemSO item, int quantity)
         {

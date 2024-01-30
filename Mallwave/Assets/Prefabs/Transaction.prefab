@@ -809,7 +809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4218209194393731667, guid: c3fa65b574c45ab478f2276fc5ffeff8, type: 3}
   _contentPanel: {fileID: 3796745042035323095}
-  _inventoryDescription: {fileID: 1702112581595678564}
+  _inventoryDescription: {fileID: 3421896429326781551}
+  shopDescription: {fileID: 3421896429326781551}
 --- !u!1 &3796745041942984034
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +994,7 @@ GameObject:
   - component: {fileID: 3796745042173714073}
   - component: {fileID: 3796745042173714072}
   - component: {fileID: 8597376707392163421}
-  - component: {fileID: 1702112581595678564}
+  - component: {fileID: 3421896429326781551}
   m_Layer: 5
   m_Name: InventoryDescription
   m_TagString: Untagged
@@ -1108,7 +1109,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1702112581595678564
+--- !u!114 &3421896429326781551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1117,12 +1118,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3796745042173714078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe18988e38073ec44b79ca7083d9affb, type: 3}
+  m_Script: {fileID: 11500000, guid: a3cf39495251bd545bfa5d3cc04b8315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 6819400418720489576}
   _title: {fileID: 741507397802321634}
   _description: {fileID: 7224654338303710893}
+  buttonText: {fileID: 4963286956268944980}
 --- !u!1 &4104810571948080993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1613,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6980706431833377662}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1863,7 +1865,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9197026820761678817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1370537481927240997
 MonoBehaviour:
   m_ObjectHideFlags: 0

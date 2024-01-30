@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11cd336080901c446995ed4ac84f1982, type: 3}
-  m_Name: Bikini
+  m_Name: DiverUniform
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
-  <Name>k__BackingField: Bikini
-  <Price>k__BackingField: 50
-  <Description>k__BackingField: Bikini
-  <ItemImage>k__BackingField: {fileID: 501381522, guid: 627e670e96897ef42acdcc3101a15124, type: 3}
+  <Name>k__BackingField: Scout Uniform
+  <Price>k__BackingField: 150
+  <Description>k__BackingField: A Brand new diver uniform
+  <ItemImage>k__BackingField: {fileID: 1016755147, guid: bdbb833125e12044b99b9027193d1add, type: 3}

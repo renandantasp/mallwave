@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <Name>k__BackingField: Boxer
-  <Price>k__BackingField: 200
+  <Price>k__BackingField: 50
   <Description>k__BackingField: A brand new white boxer
   <ItemImage>k__BackingField: {fileID: 509856255, guid: d7661df08f00d2b40b621bd7de00db4b, type: 3}

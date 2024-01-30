@@ -3979,6 +3979,10 @@ PrefabInstance:
       propertyPath: _image
       value: 
       objectReference: {fileID: 372879604}
+    - target: {fileID: 3421896429326781551, guid: 835d142c2517d03479685490e5076139, type: 3}
+      propertyPath: _image
+      value: 
+      objectReference: {fileID: 372879604}
     - target: {fileID: 3796745040986504355, guid: 835d142c2517d03479685490e5076139, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4146,6 +4150,22 @@ PrefabInstance:
     - target: {fileID: 3796745042173714079, guid: 835d142c2517d03479685490e5076139, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712814660955438067, guid: 835d142c2517d03479685490e5076139, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1759346840}
+    - target: {fileID: 4712814660955438067, guid: 835d142c2517d03479685490e5076139, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TradeItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712814660955438067, guid: 835d142c2517d03479685490e5076139, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ShopUIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712814660955438067, guid: 835d142c2517d03479685490e5076139, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5497602488256718319, guid: 835d142c2517d03479685490e5076139, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4985,6 +5005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopkeeperInventory: {fileID: 11400000, guid: 03efa58eb95cae44b8b8f294f6eff93a, type: 2}
   shopUI: {fileID: 936435470}
+  shopUIController: {fileID: 1759346840}
   shopkeeperPage: {fileID: 418662789}
   playerManager: {fileID: 1769511573}
 --- !u!212 &1759346838
@@ -5068,7 +5089,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 936435470}
-  inventoryData: {fileID: 11400000, guid: 03efa58eb95cae44b8b8f294f6eff93a, type: 2}
+  shopkeeperData: {fileID: 11400000, guid: 03efa58eb95cae44b8b8f294f6eff93a, type: 2}
+  playerData: {fileID: 11400000, guid: 4c6a8de8be5071844b8c3f75d8001102, type: 2}
   isInventoryOpen: 0
 --- !u!114 &1769511573 stripped
 MonoBehaviour:
