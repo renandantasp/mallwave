@@ -1,20 +1,13 @@
 using Inventory.Model;
-using Inventory.UI;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-using UnityEngine.Analytics;
-using UnityEngine.SceneManagement;
 
 public class Interactor : MonoBehaviour
 {
     private bool canInteract;
     public InventorySO shopkeeperInventory;
 
-    public InventoryPage shopUI;
+    public ShopPage shopUI;
 
     public ShopkeeperPage shopkeeperPage;
 

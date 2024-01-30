@@ -19,12 +19,6 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void EnableTalk()
     {
         playerMovement.isTalking = true;

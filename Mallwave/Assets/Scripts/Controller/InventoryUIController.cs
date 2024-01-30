@@ -45,12 +45,10 @@ namespace Inventory
             inventoryUI.InitializeInventory(inventoryData.Size);
             inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
             inventoryUI.OnItemActionRequested += HandleItemActionRequest;
-            // inventoryUI.OnStartedDragging += HandleDragging;
-            // inventoryUI.OnSwapItems += HandleSwapItems;
         }
 
         private void HandleDescriptionRequest(int itemIndex)
-        {
+        {            
             Item inventoryItem = inventoryData.GetItemAt(itemIndex);
             if (inventoryItem.IsEmpty)
             {
@@ -71,17 +69,6 @@ namespace Inventory
             }
         }
 
-
-        private void HandleDragging(int itemIndex)
-        {
-            Item item = inventoryData.GetItemAt(itemIndex);
-            if (item.IsEmpty) return;
-            inventoryUI.CreateDraggedItem(item.item.ItemImage, item.quantity);
-        }
-        private void HandleSwapItems(int index1, int index2)
-        {
-            inventoryData.SwapItems(index1, index2);
-        }
 
 
 

@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 namespace Inventory.UI
 {
-    public class InventoryItem : MonoBehaviour, IPointerClickHandler,
-        IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
+    public class InventoryItem : MonoBehaviour, IPointerClickHandler
     {
 
         [SerializeField]
@@ -24,10 +23,8 @@ namespace Inventory.UI
         private InventoryDescription _inventoryDescription;
 
         public event Action<InventoryItem> OnItemClicked,
-            OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
             OnRightMouseBtnClick;
 
-        private bool _empty = true;
 
         public void Awake()
         {
@@ -47,7 +44,6 @@ namespace Inventory.UI
         public void ResetData()
         {
             _itemImage.gameObject.SetActive(false);
-            _empty = true;
         }
 
         public void SetData(Sprite sprite, int quantity)
@@ -55,7 +51,6 @@ namespace Inventory.UI
             _itemImage.gameObject.SetActive(true);
             _itemImage.sprite = sprite;
             _quantity.text = quantity.ToString();
-            _empty = false;
 
         }
 
@@ -71,26 +66,5 @@ namespace Inventory.UI
             }
         }
 
-        public void OnBeginDrag(PointerEventData eventData)
-        {
-            if (_empty) return;
-            OnItemBeginDrag?.Invoke(this);
-        }
-
-        public void OnEndDrag(PointerEventData eventData)
-        {
-            OnItemEndDrag?.Invoke(this);
-        }
-
-        public void OnDrop(PointerEventData eventData)
-        {
-            Debug.Log("On Drop");
-            OnItemDroppedOn?.Invoke(this);
-        }
-
-        public void OnDrag(PointerEventData eventData)
-        {
-
-        }
     }
 }

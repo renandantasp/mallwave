@@ -114,14 +114,7 @@ namespace Inventory.Model {
             return inventoryItems[index];
         }
 
-        public void SwapItems(int index1, int index2)
-        {
-            Item item = inventoryItems[index1];
-            inventoryItems[index1] = inventoryItems[index2];
-            inventoryItems[index2] = item;
-            InformAboutChange();
-        }
-
+   
         public void InformAboutChange()
         {
             OnInventoryUpdated?.Invoke(GetCurrentInventoryState());

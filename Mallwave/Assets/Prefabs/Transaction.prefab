@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 3796745041752201291}
   - component: {fileID: 3796745041752201290}
   - component: {fileID: 3796745041752201284}
-  - component: {fileID: 8569950431606491808}
+  - component: {fileID: 8372027382333755240}
   m_Layer: 5
   m_Name: Transaction
   m_TagString: Untagged
@@ -795,7 +795,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &8569950431606491808
+--- !u!114 &8372027382333755240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -804,13 +804,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3796745041752201288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18fb2b93798fc0a40b5a79d665abf281, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4b584189cdc744ab7e1a9cb44ef9d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 4218209194393731667, guid: c3fa65b574c45ab478f2276fc5ffeff8, type: 3}
-  _contentPanel: {fileID: 3796745040986504355}
+  _contentPanel: {fileID: 3796745042035323095}
   _inventoryDescription: {fileID: 1702112581595678564}
-  _follower: {fileID: 0}
 --- !u!1 &3796745041942984034
 GameObject:
   m_ObjectHideFlags: 0

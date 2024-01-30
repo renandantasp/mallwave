@@ -15,22 +15,16 @@ namespace Inventory.UI
         [SerializeField]
         private InventoryDescription _inventoryDescription;
 
-        [SerializeField]
-        private MouseFollower _follower;
 
         List<InventoryItem> _items = new List<InventoryItem>();
 
         public event Action<int> OnDescriptionRequested,
-            OnItemActionRequested,
-            OnStartedDragging;
-        public event Action<int, int> OnSwapItems;
+            OnItemActionRequested;
 
-        private int currentlyDraggedItem = -1;
 
         public void Awake()
         {
             Hide();
-            _follower.Toggle(false);
         }
 
         public void InitializeInventory(int size)
@@ -41,9 +35,6 @@ namespace Inventory.UI
                 item.transform.SetParent(_contentPanel);
                 _items.Add(item);
                 item.OnItemClicked += HandleItemSelection;
-                item.OnItemBeginDrag += HandleBeginDrag;
-                item.OnItemDroppedOn += HandleSwap;
-                item.OnItemEndDrag += HandleEndDrag;
                 item.OnRightMouseBtnClick += HandleShowItemActions;
             }
         }
@@ -58,52 +49,12 @@ namespace Inventory.UI
 
         }
 
-        private void ResetDraggedItem()
-        {
-            _follower.Toggle(false);
-            currentlyDraggedItem = -1;
-        }
-        private void HandleEndDrag(InventoryItem item)
-        {
-            ResetDraggedItem();
-            Debug.Log("End Drag");
-        }
-
-        private void HandleSwap(InventoryItem item)
-        {
-            int index = _items.IndexOf(item);
-            if (index == -1)
-            {
-
-                return;
-            }
-            OnSwapItems?.Invoke(currentlyDraggedItem, index);
-            HandleItemSelection(item);
-
-        }
-
+  
         private void HandleShowItemActions(InventoryItem item)
         {
             int index = _items.IndexOf(item);
             if (index == -1) return;
             OnItemActionRequested?.Invoke(index);
-        }
-
-        private void HandleBeginDrag(InventoryItem item)
-        {
-            int index = _items.IndexOf(item);
-            if (index == -1) return;
-
-            currentlyDraggedItem = index;
-            HandleItemSelection(item);
-            OnStartedDragging?.Invoke(index);
-            Debug.Log("Begin Drag");
-        }
-
-        public void CreateDraggedItem(Sprite sprite, int quantity)
-        {
-            _follower.Toggle(true);
-            _follower.SetData(sprite, quantity);
         }
 
         private void HandleItemSelection(InventoryItem item)
@@ -139,8 +90,6 @@ namespace Inventory.UI
         public void Hide()
         {
             gameObject.SetActive(false);
-            ResetDraggedItem();
-            Debug.Log("Hide");
         }
 
         public void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
