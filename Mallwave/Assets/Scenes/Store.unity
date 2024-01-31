@@ -4804,6 +4804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2006629333585054485, guid: 271071aec558ef542b3496309278b440, type: 3}
+      propertyPath: mainRectTransform
+      value: 
+      objectReference: {fileID: 941236742}
     - target: {fileID: 4697524225990218621, guid: 271071aec558ef542b3496309278b440, type: 3}
       propertyPath: m_Controller
       value: 

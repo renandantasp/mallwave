@@ -104,11 +104,8 @@ namespace Inventory.UI
         {
             foreach (var item in _items)
             {
-                if (item != null)
-                {
                     item.ResetData();
                     item.Deselect();
-                }
 
             }
         }

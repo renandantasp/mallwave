@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9093f5bc1280b8499f9e9207008c41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clothesRenderer: {fileID: 8634205828695454927}
+  clothesRenderer: {fileID: 359880270737975832}
   itemsEquipped: {fileID: 11400000, guid: d6ac3d016c2dd234ba384272d24923cc, type: 2}
 --- !u!114 &705263012077646188
 MonoBehaviour:
@@ -508,7 +508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7319166478668709609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
