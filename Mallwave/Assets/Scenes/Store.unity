@@ -5615,6 +5615,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2006629332252949484, guid: 271071aec558ef542b3496309278b440, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2006629332728649897, guid: 271071aec558ef542b3496309278b440, type: 3}
       propertyPath: inventoryUI
       value: 

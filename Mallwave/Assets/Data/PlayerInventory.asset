@@ -19,13 +19,13 @@ MonoBehaviour:
     item: {fileID: 0}
   - quantity: 0
     item: {fileID: 0}
-  - quantity: 0
+  - quantity: 1
     item: {fileID: 0}
-  - quantity: 0
+  - quantity: 1
     item: {fileID: 0}
-  - quantity: 0
+  - quantity: 1
     item: {fileID: 0}
-  - quantity: 0
+  - quantity: 1
     item: {fileID: 0}
   - quantity: 0
     item: {fileID: 0}
@@ -34,4 +34,4 @@ MonoBehaviour:
   - quantity: 0
     item: {fileID: 0}
   <Size>k__BackingField: 10
-  Money: 1000
+  Money: 1050

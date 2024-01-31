@@ -128,7 +128,7 @@ TextureImporter:
       name: Boxer_1
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 448
         width: 64
         height: 64
@@ -149,7 +149,7 @@ TextureImporter:
       name: Boxer_2
       rect:
         serializedVersion: 2
-        x: 384
+        x: 128
         y: 448
         width: 64
         height: 64
@@ -170,7 +170,7 @@ TextureImporter:
       name: Boxer_3
       rect:
         serializedVersion: 2
-        x: 448
+        x: 192
         y: 448
         width: 64
         height: 64
@@ -191,8 +191,8 @@ TextureImporter:
       name: Boxer_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 256
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -212,8 +212,8 @@ TextureImporter:
       name: Boxer_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 384
+        x: 384
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -233,8 +233,8 @@ TextureImporter:
       name: Boxer_6
       rect:
         serializedVersion: 2
-        x: 128
-        y: 384
+        x: 448
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -254,7 +254,7 @@ TextureImporter:
       name: Boxer_7
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 384
         width: 64
         height: 64
@@ -275,7 +275,7 @@ TextureImporter:
       name: Boxer_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 384
         width: 64
         height: 64
@@ -296,7 +296,7 @@ TextureImporter:
       name: Boxer_9
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 384
         width: 64
         height: 64
@@ -317,7 +317,7 @@ TextureImporter:
       name: Boxer_10
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 384
         width: 64
         height: 64
@@ -338,7 +338,7 @@ TextureImporter:
       name: Boxer_11
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 384
         width: 64
         height: 64
@@ -359,8 +359,8 @@ TextureImporter:
       name: Boxer_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
+        x: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -380,8 +380,8 @@ TextureImporter:
       name: Boxer_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 320
+        x: 384
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -401,8 +401,8 @@ TextureImporter:
       name: Boxer_14
       rect:
         serializedVersion: 2
-        x: 128
-        y: 320
+        x: 448
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -422,7 +422,7 @@ TextureImporter:
       name: Boxer_15
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 320
         width: 64
         height: 64
@@ -443,7 +443,7 @@ TextureImporter:
       name: Boxer_16
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 320
         width: 64
         height: 64
@@ -464,7 +464,7 @@ TextureImporter:
       name: Boxer_17
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 320
         width: 64
         height: 64
@@ -485,7 +485,7 @@ TextureImporter:
       name: Boxer_18
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 320
         width: 64
         height: 64
@@ -506,7 +506,7 @@ TextureImporter:
       name: Boxer_19
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 320
         width: 64
         height: 64
@@ -527,8 +527,8 @@ TextureImporter:
       name: Boxer_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 320
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -548,8 +548,8 @@ TextureImporter:
       name: Boxer_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 256
+        x: 384
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -569,8 +569,8 @@ TextureImporter:
       name: Boxer_22
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
+        x: 448
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -590,7 +590,7 @@ TextureImporter:
       name: Boxer_23
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 256
         width: 64
         height: 64
@@ -611,7 +611,7 @@ TextureImporter:
       name: Boxer_24
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 256
         width: 64
         height: 64
@@ -632,7 +632,7 @@ TextureImporter:
       name: Boxer_25
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 256
         width: 64
         height: 64
@@ -653,7 +653,7 @@ TextureImporter:
       name: Boxer_26
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 256
         width: 64
         height: 64
@@ -674,7 +674,7 @@ TextureImporter:
       name: Boxer_27
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 256
         width: 64
         height: 64
@@ -695,8 +695,8 @@ TextureImporter:
       name: Boxer_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 320
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -716,8 +716,8 @@ TextureImporter:
       name: Boxer_29
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 384
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -737,8 +737,8 @@ TextureImporter:
       name: Boxer_30
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 448
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -758,7 +758,7 @@ TextureImporter:
       name: Boxer_31
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 192
         width: 64
         height: 64
@@ -779,7 +779,7 @@ TextureImporter:
       name: Boxer_32
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 192
         width: 64
         height: 64
@@ -800,7 +800,7 @@ TextureImporter:
       name: Boxer_33
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 192
         width: 64
         height: 64
@@ -821,7 +821,7 @@ TextureImporter:
       name: Boxer_34
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 192
         width: 64
         height: 64
@@ -842,7 +842,7 @@ TextureImporter:
       name: Boxer_35
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 192
         width: 64
         height: 64
@@ -863,8 +863,8 @@ TextureImporter:
       name: Boxer_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 320
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -884,8 +884,8 @@ TextureImporter:
       name: Boxer_37
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 384
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -905,8 +905,8 @@ TextureImporter:
       name: Boxer_38
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 448
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -926,7 +926,7 @@ TextureImporter:
       name: Boxer_39
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 128
         width: 64
         height: 64
@@ -947,7 +947,7 @@ TextureImporter:
       name: Boxer_40
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 128
         width: 64
         height: 64
@@ -968,7 +968,7 @@ TextureImporter:
       name: Boxer_41
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 128
         width: 64
         height: 64
@@ -989,7 +989,7 @@ TextureImporter:
       name: Boxer_42
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 128
         width: 64
         height: 64
@@ -1010,7 +1010,7 @@ TextureImporter:
       name: Boxer_43
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 128
         width: 64
         height: 64
@@ -1031,8 +1031,8 @@ TextureImporter:
       name: Boxer_44
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 320
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1052,8 +1052,8 @@ TextureImporter:
       name: Boxer_45
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 384
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1073,8 +1073,8 @@ TextureImporter:
       name: Boxer_46
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 448
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -1094,7 +1094,7 @@ TextureImporter:
       name: Boxer_47
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 64
         width: 64
         height: 64
@@ -1115,7 +1115,7 @@ TextureImporter:
       name: Boxer_48
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 64
         width: 64
         height: 64
@@ -1136,7 +1136,7 @@ TextureImporter:
       name: Boxer_49
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 64
         width: 64
         height: 64
@@ -1157,7 +1157,7 @@ TextureImporter:
       name: Boxer_50
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 64
         width: 64
         height: 64
@@ -1178,7 +1178,7 @@ TextureImporter:
       name: Boxer_51
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 64
         width: 64
         height: 64
@@ -1199,8 +1199,8 @@ TextureImporter:
       name: Boxer_52
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 320
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -1220,8 +1220,8 @@ TextureImporter:
       name: Boxer_53
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 384
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -1241,8 +1241,8 @@ TextureImporter:
       name: Boxer_54
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 448
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -1262,7 +1262,7 @@ TextureImporter:
       name: Boxer_55
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 0
         width: 64
         height: 64
@@ -1283,7 +1283,7 @@ TextureImporter:
       name: Boxer_56
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 0
         width: 64
         height: 64
@@ -1304,7 +1304,7 @@ TextureImporter:
       name: Boxer_57
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 0
         width: 64
         height: 64
@@ -1325,7 +1325,7 @@ TextureImporter:
       name: Boxer_58
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 0
         width: 64
         height: 64
@@ -1346,7 +1346,7 @@ TextureImporter:
       name: Boxer_59
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 0
         width: 64
         height: 64
@@ -1363,6 +1363,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Boxer_60
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baf89f1cbc78f343892e304eb693523
+      internalID: -1981575001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boxer_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686589950025a254abe8d656fd1797cd
+      internalID: 778484099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boxer_62
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f63ec83e4c3264f8e91a1eec6429f4
+      internalID: -515180892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1374,9 +1437,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boxer_22: 538342081
+      Boxer_43: 1001950908
       Boxer_23: 615017246
       Boxer_0: 509856255
+      Boxer_61: 778484099
       Boxer_15: -1964489878
       Boxer_55: 170637177
       Boxer_45: -1735817752
@@ -1426,14 +1490,16 @@ TextureImporter:
       Boxer_8: -1686742435
       Boxer_52: -1549736597
       Boxer_12: -1202336031
+      Boxer_60: -1981575001
       Boxer_35: -592089332
       Boxer_47: -2114649786
+      Boxer_62: -515180892
       Boxer_27: -623384536
       Boxer_33: -1195173089
       Boxer_56: 175587771
       Boxer_54: 483566416
-      Boxer_43: 1001950908
       Boxer_5: -700629889
+      Boxer_22: 538342081
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
