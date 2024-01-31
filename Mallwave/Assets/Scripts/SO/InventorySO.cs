@@ -24,7 +24,7 @@ namespace Inventory.Model {
         }
         public int Money;
         public event Action<Dictionary<int, Item>> OnInventoryUpdated;
-        public int AddItem(ItemSO item, int quantity)
+        public void AddItem(ItemSO item, int quantity)
         {
             if (!item.IsStackable)
             {
@@ -34,13 +34,13 @@ namespace Inventory.Model {
                     {
                         quantity -= AddNonStackableItem(item, 1);
                     }
-                    return quantity;
+                    return;
                    
                 }
             }
             quantity = AddStackableItem(item, quantity);
-            InformAboutChange();
-            return quantity;
+            //InformAboutChange();
+            return;
         }
 
         private int AddNonStackableItem(ItemSO item, int quantity)
@@ -73,7 +73,7 @@ namespace Inventory.Model {
                     inventoryItems[itemIndex] = Item.GetEmptyItem();
                 else
                     inventoryItems[itemIndex].ChangeQuantity(newQuantity);
-                InformAboutChange();
+                //InformAboutChange();
             }
         }
 

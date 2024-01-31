@@ -100,12 +100,16 @@ namespace Inventory.UI
             _items[itemIndex].Select();
         }
 
-        internal void ResetAllItems()
+        public void ResetAllItems()
         {
             foreach (var item in _items)
             {
-                item.ResetData();
-                item.Deselect();
+                if (item != null)
+                {
+                    item.ResetData();
+                    item.Deselect();
+                }
+
             }
         }
     }

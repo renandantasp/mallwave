@@ -31,6 +31,7 @@ namespace Inventory
 
         private void UpdateInventoryUI(Dictionary<int, Item> inventoryState)
         {
+
             inventoryUI.ResetAllItems();
             foreach (var item in inventoryState)
             {

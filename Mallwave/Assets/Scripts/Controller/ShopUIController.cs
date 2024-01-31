@@ -19,8 +19,6 @@ public class ShopUIController : MonoBehaviour
 
     private InventorySO buyerData, sellerData;
 
-    
-
     [HideInInspector]
     public bool isInventoryOpen = false;
 
@@ -30,6 +28,7 @@ public class ShopUIController : MonoBehaviour
     private void Start()
     {
         inventoryUI.Hide();
+        inventoryUI.OnDescriptionRequested += HandleDescription;
     }
     public void Setup(bool isBuy)
     {
@@ -49,49 +48,24 @@ public class ShopUIController : MonoBehaviour
         inventoryUI.UpdateButton(this.isBuy);
         inventoryUI.ResetAllItems();
         PrepareUI();
-        PrepareInventoryData();
+        UpdateInventoryState();
         inventoryUI.Show();
 
     }
-
-    private void PrepareInventoryData()
+    private void PrepareUI()
     {
-        buyerData.OnInventoryUpdated += UpdateInventoryUI;
-        sellerData.OnInventoryUpdated += UpdateInventoryUI;
-        OnSetActive();
-
+        inventoryUI.InitializeInventory(buyerData.Size);
     }
 
-    public void OnSetActive()
+    public void UpdateInventoryState()
     {
+        inventoryUI.ResetAllItems();
         foreach (var item in buyerData.GetCurrentInventoryState())
         {
             inventoryUI.UpdateData(item.Key,
                 item.Value.item.ItemImage,
                 item.Value.quantity);
         }
-    }
-
-    private void UpdateInventoryUI(Dictionary<int, Item> inventoryState)
-    {
-        inventoryUI.ResetAllItems();
-        foreach (var item in inventoryState)
-        {
-            Debug.Log(item.Value.item.Name);
-            if (item.Value.item.Name == "Mall Coins")
-            {
-                continue;
-            }
-            inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage,
-                item.Value.quantity);
-        }
-    }
-
-    private void PrepareUI()
-    {
-        inventoryUI.InitializeInventory(buyerData.Size);
-        inventoryUI.OnDescriptionRequested += HandleDescription;
-        inventoryUI.OnItemActionRequested += HandleItemAction;
     }
 
     private void HandleDescription(int itemIndex)
@@ -108,10 +82,6 @@ public class ShopUIController : MonoBehaviour
         newDescription += $"\nYour Money: {playerData.Money}";
         inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, newDescription);
     }
-    private void HandleItemAction(int itemIndex)
-    {
-        Debug.Log(itemIndex);
-    }
 
     public void TradeItem()
     {
@@ -127,6 +97,10 @@ public class ShopUIController : MonoBehaviour
         {
             playerData.Money += item.item.Price;
         }
+        UpdateInventoryState();
+        inventoryUI.ResetSelection();
+        selectedItemIndex = -1;
+
     }
 
 
