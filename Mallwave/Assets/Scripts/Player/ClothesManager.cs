@@ -1,13 +1,10 @@
 using Inventory.Model;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ArmorManager : MonoBehaviour
+public class ClothesManager : MonoBehaviour
 {
 
-    [SerializeField]
-    private SpriteRenderer clothesRenderer;
+    public Animator clothesRenderer;
 
     [SerializeField] 
     private PlayerEquip itemsEquipped;
@@ -16,13 +13,16 @@ public class ArmorManager : MonoBehaviour
     {
         if (itemsEquipped.isClothEquipped())
         {
-            clothesRenderer.sprite = itemsEquipped.clothEquipped.ItemImage;
+            clothesRenderer.runtimeAnimatorController = itemsEquipped.clothEquipped.ClothAnimator;
+
         }
     }
 
     public void SetClothes(EquipableItemSO item)
     {
+        Debug.Log("Equiping");
         itemsEquipped.clothEquipped = item;
-        clothesRenderer.sprite = item.ItemImage;
+        clothesRenderer.runtimeAnimatorController = itemsEquipped.clothEquipped.ClothAnimator;
+
     }
 }

@@ -17,3 +17,4 @@ MonoBehaviour:
   <Price>k__BackingField: 50
   <Description>k__BackingField: A brand new white boxer
   <ItemImage>k__BackingField: {fileID: 509856255, guid: d7661df08f00d2b40b621bd7de00db4b, type: 3}
+  <ClothAnimator>k__BackingField: {fileID: 9100000, guid: 5be71d947460b2040bc428c3a938c894, type: 2}

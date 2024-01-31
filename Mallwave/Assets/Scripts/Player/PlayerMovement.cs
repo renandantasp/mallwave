@@ -6,8 +6,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rb;
     private Vector2 _moveDirection;
     private Vector2 _lastDirection;
-    private bool _isRunning;
-    private PlayerManager _manager;
+    private bool isRunning, isWalking;
+    private float horizontal, vertical;
+    private PlayerManager manager;
 
     [HideInInspector]
     public bool canWalk;
@@ -19,14 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private float _speed;
-
-    public Animator Animator { get; private set; }
-
+    
     void Start()
     {
         this._rb = GetComponentInParent<Rigidbody2D>();
-        this._manager = GetComponentInParent<PlayerManager>();
-        this.Animator = GetComponentInParent<Animator>();
+        this.manager = GetComponentInParent<PlayerManager>();
         this._speed = 150;
         this.canWalk = true;
     }
@@ -47,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckWalk()
     {
-        this.canWalk = !(_manager.inventoryUIController.isInventoryOpen || isTalking || isPaused);
+        this.canWalk = !(manager.inventoryUIController.isInventoryOpen || isTalking || isPaused);
     }
 
     void FixedUpdate()
@@ -59,27 +57,29 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
-        _isRunning = Input.GetKey(KeyCode.LeftShift);
+        isRunning = Input.GetKey(KeyCode.LeftShift);
         _moveDirection = new Vector2(moveX, moveY).normalized;
-        
-        Animator.SetBool("isWalking", true);
+
+        manager.AnimVariables.isWalking = true;
+
 
         if (moveX != 0 || moveY != 0) {
             _lastDirection = _moveDirection;
         }
         else
         {
-            Animator.SetBool("isWalking", false);
+            manager.AnimVariables.isWalking = false;
         }
-        Animator.SetFloat("Horizontal", _lastDirection.x);
-        Animator.SetFloat("Vertical", _lastDirection.y);
-        
+        manager.AnimVariables.horizontal = _lastDirection.x;
+        manager.AnimVariables.vertical = _lastDirection.y;
 
     }
 
+
+
     void Move()
     {
-        float final_speed = _isRunning ? _speed * 2f : _speed;
+        float final_speed = isRunning ? _speed * 2f : _speed;
         _rb.velocity = _moveDirection * final_speed * Time.deltaTime;
     }
 

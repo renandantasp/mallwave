@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShirtShorts_0
+      name: Scout_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4008fc4d894171547b222ecabc92ef52
-      internalID: 1235896004
+      spriteID: d71eb5f51c5acd047ade8e5165c9d95b
+      internalID: -196352059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_1
+      name: Scout_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b11341b4b8494e94d8d0fb073a671035
-      internalID: -1977273834
+      spriteID: 765013d2a2628f5449c71f9342271e60
+      internalID: 75901201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_2
+      name: Scout_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ca93ff4c6bcd86418808292f7ad3320
-      internalID: -1457579445
+      spriteID: 020413a677346794084d685ac855f5c6
+      internalID: 1857504995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_3
+      name: Scout_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de419558683d18244ba246364b2a11c1
-      internalID: -181937473
+      spriteID: 757efe7c93271484d9dcee8a5a4cab8b
+      internalID: 2073065198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_4
+      name: Scout_4
       rect:
         serializedVersion: 2
         x: 256
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adf975ef69a1ef14b8278c7c69b74973
-      internalID: -1703694043
+      spriteID: b423111aaaf345f40a71399359b7ea5f
+      internalID: 2126428312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_5
+      name: Scout_5
       rect:
         serializedVersion: 2
         x: 320
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f251338e9ee3bab46bff66827bdbb1c9
-      internalID: -2136556525
+      spriteID: aaced95156e0587419884d4b539fabc0
+      internalID: -1992910409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_6
+      name: Scout_6
       rect:
         serializedVersion: 2
         x: 384
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8519be814c5e1d94b91d6bd1b048f2df
-      internalID: -528127584
+      spriteID: beb5062c6f6ebde4eb4ec83455f2c016
+      internalID: 1844920426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_7
+      name: Scout_7
       rect:
         serializedVersion: 2
         x: 448
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c48154f7e18773843a23105ce0cdf494
-      internalID: -1679826261
+      spriteID: 4c51425be6160764fb0c5e391860d17d
+      internalID: -1043411320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_8
+      name: Scout_8
       rect:
         serializedVersion: 2
         x: 0
@@ -286,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8c50bca9d0d3aa4d9db8e59e6be21ad
-      internalID: 383307785
+      spriteID: fa434117c0cccf24ba4f01e3f703eec7
+      internalID: 1057419671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_9
+      name: Scout_9
       rect:
         serializedVersion: 2
         x: 64
@@ -307,14 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a687c801dfaed2418b2c96c58b3df57
-      internalID: -455930380
+      spriteID: f45f5a2a79e5cf647bd8c10dfbaafbcd
+      internalID: -1478400984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_10
+      name: Scout_10
       rect:
         serializedVersion: 2
         x: 128
@@ -328,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2aa7ac63f3894444d906b6b2e5f89ec1
-      internalID: 1013123570
+      spriteID: 75609721e9cfc5c4b84b98588fc1d337
+      internalID: 1168204874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_11
+      name: Scout_11
       rect:
         serializedVersion: 2
         x: 192
@@ -349,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6796c582f26a9bf4381c40441df43ab8
-      internalID: -1574363433
+      spriteID: 0a1154c59fdd3af43bcf3304c7de6ed4
+      internalID: 1932700354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_12
+      name: Scout_12
       rect:
         serializedVersion: 2
         x: 256
@@ -370,14 +370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4567157773dd60b45bfe9993ce8ae8ef
-      internalID: 1757428374
+      spriteID: 0d4531b9ba8987648943eb9f6a9d10a5
+      internalID: 1212706461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_13
+      name: Scout_13
       rect:
         serializedVersion: 2
         x: 320
@@ -391,14 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 385aec269dbffa446be67d3a6bc6280d
-      internalID: -2034720090
+      spriteID: 1d3f3250cedb90e44ab6b783b52fc258
+      internalID: 1650261150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_14
+      name: Scout_14
       rect:
         serializedVersion: 2
         x: 384
@@ -412,14 +412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85aaf5258c545314290b6d89616a1a19
-      internalID: 612178156
+      spriteID: 02c63c474bdde0a41bdf321990d17637
+      internalID: 333692856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_15
+      name: Scout_15
       rect:
         serializedVersion: 2
         x: 448
@@ -433,14 +433,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fa6b65d3d4f4334fb81e85b1f5cb964
-      internalID: 486203696
+      spriteID: 203a581b8786cdc4b82a23fddadce37e
+      internalID: 201051024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_16
+      name: Scout_16
       rect:
         serializedVersion: 2
         x: 0
@@ -454,14 +454,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abebbf421b8970449b0ac87f2c32a7fb
-      internalID: -1633632380
+      spriteID: 844733ab0a69bb64f8b41e2df4841592
+      internalID: -1989854092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_17
+      name: Scout_17
       rect:
         serializedVersion: 2
         x: 64
@@ -475,14 +475,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 377cd245a37a2ee4cbe81777ff3d6f1d
-      internalID: 1031801422
+      spriteID: 5c91837fe46a75642af510c8459aa32c
+      internalID: 1617954553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_18
+      name: Scout_18
       rect:
         serializedVersion: 2
         x: 128
@@ -496,14 +496,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd7c68faa78784544887152c439cbc2b
-      internalID: -793564634
+      spriteID: f7e57aa5909271c4f8970c96a3016b9b
+      internalID: -1414961757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_19
+      name: Scout_19
       rect:
         serializedVersion: 2
         x: 192
@@ -517,14 +517,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e19f0707259f15e46bac42cb32ffa914
-      internalID: 435924969
+      spriteID: 20f4900dc92cdcc46992b21d602d252b
+      internalID: 1882536062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_20
+      name: Scout_20
       rect:
         serializedVersion: 2
         x: 256
@@ -538,14 +538,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ddc90721e7907344b2eebe9e9e01010
-      internalID: 1228555727
+      spriteID: 7c807f0e2c37969498de80ae77dbbc6e
+      internalID: -1807145877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_21
+      name: Scout_21
       rect:
         serializedVersion: 2
         x: 320
@@ -559,14 +559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc58d26d580c90840a6200affffd7718
-      internalID: -436456855
+      spriteID: 3b3518582097b8642821d0567a72ef88
+      internalID: -322977200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_22
+      name: Scout_22
       rect:
         serializedVersion: 2
         x: 384
@@ -580,14 +580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2dce23c22c9691408798d8109e8c1b9
-      internalID: 952548740
+      spriteID: 1322de82acb36f64e90baa9e429cd7d3
+      internalID: -1928605579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_23
+      name: Scout_23
       rect:
         serializedVersion: 2
         x: 448
@@ -601,14 +601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e7d8a9a0cdaf1145abe5e24e49b2754
-      internalID: -964757337
+      spriteID: d251448f7f632b74493c8b7a48781b80
+      internalID: 1987263630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_24
+      name: Scout_24
       rect:
         serializedVersion: 2
         x: 0
@@ -622,14 +622,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baaaa6f129c57204fa28d9a1439c2ed3
-      internalID: 186379530
+      spriteID: 1ced82314874a7849abe63432775cb36
+      internalID: -1202461154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_25
+      name: Scout_25
       rect:
         serializedVersion: 2
         x: 64
@@ -643,14 +643,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac337be18141f324b93aeffbd8fb6712
-      internalID: -2004679048
+      spriteID: 3e9da1ac1e0d8334dbb9c43a62f025ea
+      internalID: 111795281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_26
+      name: Scout_26
       rect:
         serializedVersion: 2
         x: 128
@@ -664,14 +664,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 932add4e8b9d92c479726dc230260721
-      internalID: 600933205
+      spriteID: 5b6352d3d015c714897af35682c69b7e
+      internalID: 118605868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_27
+      name: Scout_27
       rect:
         serializedVersion: 2
         x: 192
@@ -685,14 +685,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15141caa971e8ef409e39ed7aa2354ea
-      internalID: 2067525278
+      spriteID: a15d3ebd5cf89e149878f638632ed07e
+      internalID: -1890223092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_28
+      name: Scout_28
       rect:
         serializedVersion: 2
         x: 256
@@ -706,14 +706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1adf7dfe1b026a94795240b99a41231f
-      internalID: -994573930
+      spriteID: fd378ecf38b38d046870115640523697
+      internalID: -383082086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_29
+      name: Scout_29
       rect:
         serializedVersion: 2
         x: 320
@@ -727,14 +727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ee15fd68c8e24048ac26dc5a9623115
-      internalID: 411408519
+      spriteID: 823e4275b6845c74dbd7c7deaab3c2b7
+      internalID: 291354456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_30
+      name: Scout_30
       rect:
         serializedVersion: 2
         x: 384
@@ -748,14 +748,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fbb11a5483267c4da975a3533d492f6
-      internalID: -1737369786
+      spriteID: 522f2e20b2ed3e342bed83af4b333698
+      internalID: 1114844420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_31
+      name: Scout_31
       rect:
         serializedVersion: 2
         x: 448
@@ -769,14 +769,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 689c5d996ef5867459d18f7bbc7f1fb2
-      internalID: -1351400270
+      spriteID: c0fbeb9a2b6a7d345b0443e6f4e9555d
+      internalID: 1579255880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_32
+      name: Scout_32
       rect:
         serializedVersion: 2
         x: 0
@@ -790,14 +790,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc706e21190e4c642854e95e4f06e3d7
-      internalID: 368752188
+      spriteID: 1f390a588105c9a43bf48ba868623f3f
+      internalID: 649844140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_33
+      name: Scout_33
       rect:
         serializedVersion: 2
         x: 64
@@ -811,14 +811,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c055b79be37efb4aab650ebc0329dec
-      internalID: 329186025
+      spriteID: 8490b94cc9f3595458227a0dc8d39eb1
+      internalID: -1409769055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_34
+      name: Scout_34
       rect:
         serializedVersion: 2
         x: 128
@@ -832,14 +832,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc4ac6b692d949c41a3b5f34faffd835
-      internalID: 684237036
+      spriteID: 81ba8eb3c4caeb84083c3bd906235e71
+      internalID: -627330700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_35
+      name: Scout_35
       rect:
         serializedVersion: 2
         x: 192
@@ -853,14 +853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b99c605c63feaa4f94bf931b6b3d219
-      internalID: -395371972
+      spriteID: 4341688881c932444a099734ed828e54
+      internalID: -872417834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_36
+      name: Scout_36
       rect:
         serializedVersion: 2
         x: 256
@@ -874,14 +874,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 768d15e013c02f2418d340d8292758a5
-      internalID: -1998503499
+      spriteID: 9d2acfd559c4ddd459b63284b9109200
+      internalID: 10212762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_37
+      name: Scout_37
       rect:
         serializedVersion: 2
         x: 320
@@ -895,14 +895,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 203baf11c1683194bb691ca61178f189
-      internalID: 581436896
+      spriteID: 4af38793bed1c514db36aae569a2b867
+      internalID: -1576919648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_38
+      name: Scout_38
       rect:
         serializedVersion: 2
         x: 384
@@ -916,14 +916,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4414b47ffdc4eb740996b182db4bfe70
-      internalID: 1248913038
+      spriteID: 36abc9fe3ea124f4d8e5a0c4c45662c3
+      internalID: -1106559479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_39
+      name: Scout_39
       rect:
         serializedVersion: 2
         x: 448
@@ -937,14 +937,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9404d0339305504aadc2d6d4caea675
-      internalID: -949441428
+      spriteID: 487c08551e527444296fcf942d1cbd66
+      internalID: 1053087541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_40
+      name: Scout_40
       rect:
         serializedVersion: 2
         x: 0
@@ -958,14 +958,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab99d1f997f2641438b85f5638ef461f
-      internalID: -1810911329
+      spriteID: 1cb0a9f0fa537d146a1aadd08ee4ffc7
+      internalID: -1190323260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_41
+      name: Scout_41
       rect:
         serializedVersion: 2
         x: 64
@@ -979,14 +979,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e722552e98c71ee4495c2d2c43229c2d
-      internalID: 607413631
+      spriteID: 19e9b4be9f57dc3448c7988c3a67d364
+      internalID: 1026740403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_42
+      name: Scout_42
       rect:
         serializedVersion: 2
         x: 128
@@ -1000,14 +1000,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b82c1f0c863168949a75852bc83cef12
-      internalID: -371118362
+      spriteID: 4487dbc6352511641ad84fa2311f3f37
+      internalID: 1093650689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_43
+      name: Scout_43
       rect:
         serializedVersion: 2
         x: 192
@@ -1021,14 +1021,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4595b231ce2eb34984278b02ee51c89
-      internalID: 1806602453
+      spriteID: 658c74b93def77441a0ae18bfa65a21a
+      internalID: 1369661383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_44
+      name: Scout_44
       rect:
         serializedVersion: 2
         x: 256
@@ -1042,14 +1042,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6680f885e91b20e459888075c908ef79
-      internalID: -1643523267
+      spriteID: f003dfdc66f65ae47a8df856d50a5772
+      internalID: 1992497235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_45
+      name: Scout_45
       rect:
         serializedVersion: 2
         x: 320
@@ -1063,14 +1063,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11a13030de8cc7a4384d98091a14a76d
-      internalID: -27335690
+      spriteID: 56155a1cc2b6c2b4ba966d5aab28c918
+      internalID: 1655344800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_46
+      name: Scout_46
       rect:
         serializedVersion: 2
         x: 384
@@ -1084,14 +1084,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80ac65bd539769349a8f8dea2019e5dc
-      internalID: -1434994862
+      spriteID: 09fa3064b423b2447a5c1010602dd7ab
+      internalID: 765064222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_47
+      name: Scout_47
       rect:
         serializedVersion: 2
         x: 448
@@ -1105,14 +1105,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8a354e0b961057438cb8469a418d76c
-      internalID: -472478286
+      spriteID: cc78dcc84986d0c4886020b05ae4f08a
+      internalID: 1765217669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_48
+      name: Scout_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1126,14 +1126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8775146e2be18e4980a35d91d8bc9bc
-      internalID: -1905636234
+      spriteID: 943091646ae40a740b901e1f6d801f88
+      internalID: -1735123251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_49
+      name: Scout_49
       rect:
         serializedVersion: 2
         x: 64
@@ -1147,14 +1147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d9d29b96681fd342a4f5c12ed0dc6a2
-      internalID: 2074658879
+      spriteID: 1d2d768399498514ca013edfd57fd009
+      internalID: 1469303909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_50
+      name: Scout_50
       rect:
         serializedVersion: 2
         x: 128
@@ -1168,14 +1168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f360a92e2b556a1459ae77ca73a057c0
-      internalID: -1421074417
+      spriteID: 58846bcd6312a5e49a22362dce56d882
+      internalID: 1799169110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_51
+      name: Scout_51
       rect:
         serializedVersion: 2
         x: 192
@@ -1189,14 +1189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c72ada477ff66cb459f0dd5f72193530
-      internalID: 1273080901
+      spriteID: ca5c91c512bd9dc41bca795004818977
+      internalID: 1243382120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_52
+      name: Scout_52
       rect:
         serializedVersion: 2
         x: 256
@@ -1210,14 +1210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2835da2d700d0345af0f24b142fc014
-      internalID: 1672316425
+      spriteID: 9dfb687fdee3666429fa2443f42fe487
+      internalID: -30469795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_53
+      name: Scout_53
       rect:
         serializedVersion: 2
         x: 320
@@ -1231,14 +1231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a71d4e316d5cd404d89d7a6a04f533a8
-      internalID: -333565819
+      spriteID: 656e16d46c0d104449103e3d66fd84b3
+      internalID: -485112742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_54
+      name: Scout_54
       rect:
         serializedVersion: 2
         x: 384
@@ -1252,14 +1252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7949acd7a28fffb4385949a87a2555ad
-      internalID: -889207535
+      spriteID: 7a985204c50103545be4e3ea8a1fcc3e
+      internalID: -842678690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_55
+      name: Scout_55
       rect:
         serializedVersion: 2
         x: 448
@@ -1273,14 +1273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f69cf48ddb1d2c749be66606617662ea
-      internalID: -313602011
+      spriteID: 290c09d446b5b434bb48d8260893c810
+      internalID: -1057193047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_56
+      name: Scout_56
       rect:
         serializedVersion: 2
         x: 0
@@ -1294,14 +1294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb31183592d9a624db93b20c8a1cd04d
-      internalID: -173667537
+      spriteID: b54f52ed1c905b94c83b3ee6dd9f91fd
+      internalID: 1658116511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_57
+      name: Scout_57
       rect:
         serializedVersion: 2
         x: 64
@@ -1315,14 +1315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e91ce66d1f8d16541ad6bfe4d633ad65
-      internalID: 2011177167
+      spriteID: 5c0720f4b74d7224798f811ecd5071d2
+      internalID: -509931331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_58
+      name: Scout_58
       rect:
         serializedVersion: 2
         x: 128
@@ -1336,14 +1336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b7b00cd049153949a2d9165275db6f7
-      internalID: 569842333
+      spriteID: 8ba92a4971ba0a04a89d3f9e58799e79
+      internalID: -1997025424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_59
+      name: Scout_59
       rect:
         serializedVersion: 2
         x: 192
@@ -1357,14 +1357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83cfff7b5c2d55a4dbac41b51f573747
-      internalID: 757297797
+      spriteID: ef1bc81ca1d27c74499e59f2d096f5d1
+      internalID: 507043189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_60
+      name: Scout_60
       rect:
         serializedVersion: 2
         x: 256
@@ -1378,14 +1378,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66d5e06948fe62045852a5a42533b21d
-      internalID: -1868047063
+      spriteID: 7ee6bf85e54743341a4ef0e5a93adefd
+      internalID: 274678682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_61
+      name: Scout_61
       rect:
         serializedVersion: 2
         x: 320
@@ -1399,14 +1399,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 137405fa694e7a042bf8350da07b2243
-      internalID: -463521997
+      spriteID: 399c80628f3fed249a78b24ee14ca184
+      internalID: -295783428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_62
+      name: Scout_62
       rect:
         serializedVersion: 2
         x: 384
@@ -1420,14 +1420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 482ec3273f57f4b46963196b7cd91af7
-      internalID: 1971448942
+      spriteID: 3e3471f9060922246ba800f98084e5c9
+      internalID: 71097377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShirtShorts_63
+      name: Scout_63
       rect:
         serializedVersion: 2
         x: 448
@@ -1441,8 +1441,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34c18b85eb4c43448defc66c2339219
-      internalID: 206440399
+      spriteID: 35ad4d6b4800d2a48a478688c1a896e6
+      internalID: -614622417
       vertices: []
       indices: 
       edges: []
@@ -1458,70 +1458,70 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ShirtShorts_15: 486203696
-      ShirtShorts_33: 329186025
-      ShirtShorts_18: -793564634
-      ShirtShorts_59: 757297797
-      ShirtShorts_10: 1013123570
-      ShirtShorts_12: 1757428374
-      ShirtShorts_7: -1679826261
-      ShirtShorts_24: 186379530
-      ShirtShorts_0: 1235896004
-      ShirtShorts_39: -949441428
-      ShirtShorts_4: -1703694043
-      ShirtShorts_14: 612178156
-      ShirtShorts_51: 1273080901
-      ShirtShorts_23: -964757337
-      ShirtShorts_55: -313602011
-      ShirtShorts_46: -1434994862
-      ShirtShorts_35: -395371972
-      ShirtShorts_47: -472478286
-      ShirtShorts_25: -2004679048
-      ShirtShorts_19: 435924969
-      ShirtShorts_1: -1977273834
-      ShirtShorts_9: -455930380
-      ShirtShorts_20: 1228555727
-      ShirtShorts_40: -1810911329
-      ShirtShorts_17: 1031801422
-      ShirtShorts_58: 569842333
-      ShirtShorts_26: 600933205
-      ShirtShorts_27: 2067525278
-      ShirtShorts_28: -994573930
-      ShirtShorts_13: -2034720090
-      ShirtShorts_11: -1574363433
-      ShirtShorts_45: -27335690
-      ShirtShorts_41: 607413631
-      ShirtShorts_42: -371118362
-      ShirtShorts_49: 2074658879
-      ShirtShorts_48: -1905636234
-      ShirtShorts_50: -1421074417
-      ShirtShorts_6: -528127584
-      ShirtShorts_52: 1672316425
-      ShirtShorts_3: -181937473
-      ShirtShorts_37: 581436896
-      ShirtShorts_8: 383307785
-      ShirtShorts_61: -463521997
-      ShirtShorts_5: -2136556525
-      ShirtShorts_29: 411408519
-      ShirtShorts_54: -889207535
-      ShirtShorts_34: 684237036
-      ShirtShorts_63: 206440399
-      ShirtShorts_38: 1248913038
-      ShirtShorts_32: 368752188
-      ShirtShorts_62: 1971448942
-      ShirtShorts_44: -1643523267
-      ShirtShorts_30: -1737369786
-      ShirtShorts_43: 1806602453
-      ShirtShorts_57: 2011177167
-      ShirtShorts_22: 952548740
-      ShirtShorts_31: -1351400270
-      ShirtShorts_56: -173667537
-      ShirtShorts_2: -1457579445
-      ShirtShorts_16: -1633632380
-      ShirtShorts_36: -1998503499
-      ShirtShorts_60: -1868047063
-      ShirtShorts_21: -436456855
-      ShirtShorts_53: -333565819
+      Scout_10: 1168204874
+      Scout_23: 1987263630
+      Scout_35: -872417834
+      Scout_22: -1928605579
+      Scout_13: 1650261150
+      Scout_27: -1890223092
+      Scout_2: 1857504995
+      Scout_41: 1026740403
+      Scout_29: 291354456
+      Scout_57: -509931331
+      Scout_34: -627330700
+      Scout_61: -295783428
+      Scout_14: 333692856
+      Scout_40: -1190323260
+      Scout_0: -196352059
+      Scout_44: 1992497235
+      Scout_11: 1932700354
+      Scout_9: -1478400984
+      Scout_62: 71097377
+      Scout_46: 765064222
+      Scout_59: 507043189
+      Scout_26: 118605868
+      Scout_30: 1114844420
+      Scout_63: -614622417
+      Scout_15: 201051024
+      Scout_49: 1469303909
+      Scout_8: 1057419671
+      Scout_12: 1212706461
+      Scout_45: 1655344800
+      Scout_25: 111795281
+      Scout_4: 2126428312
+      Scout_28: -383082086
+      Scout_60: 274678682
+      Scout_56: 1658116511
+      Scout_47: 1765217669
+      Scout_19: 1882536062
+      Scout_52: -30469795
+      Scout_43: 1369661383
+      Scout_18: -1414961757
+      Scout_6: 1844920426
+      Scout_53: -485112742
+      Scout_32: 649844140
+      Scout_16: -1989854092
+      Scout_1: 75901201
+      Scout_33: -1409769055
+      Scout_17: 1617954553
+      Scout_54: -842678690
+      Scout_20: -1807145877
+      Scout_37: -1576919648
+      Scout_58: -1997025424
+      Scout_50: 1799169110
+      Scout_38: -1106559479
+      Scout_7: -1043411320
+      Scout_5: -1992910409
+      Scout_36: 10212762
+      Scout_42: 1093650689
+      Scout_48: -1735123251
+      Scout_39: 1053087541
+      Scout_3: 2073065198
+      Scout_21: -322977200
+      Scout_24: -1202461154
+      Scout_51: 1243382120
+      Scout_55: -1057193047
+      Scout_31: 1579255880
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -14,8 +14,10 @@ public class PlayerManager : MonoBehaviour
     private MainMenuManager mainMenu;
 
     [SerializeField]
+    public AnimationVariables AnimVariables;
+
+    [SerializeField]
     private RectTransform mainRectTransform;
-    //public Animator clothAnimator, headWearAnimator, playerAnimator;
 
     void Start()
     {
@@ -68,4 +70,10 @@ public class PlayerManager : MonoBehaviour
     {
         playerMovement.isTalking = false;
     }
+}
+
+public struct AnimationVariables
+{
+    public bool isWalking;
+    public float horizontal, vertical;
 }

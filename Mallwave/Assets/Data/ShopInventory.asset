@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ShopInventory
   m_EditorClassIdentifier: 
   inventoryItems:
-  - quantity: 1
-    item: {fileID: 11400000, guid: 4dedcf6102c381343973cb5d9f19bf4f, type: 2}
-  - quantity: 1
-    item: {fileID: 11400000, guid: 1b681bda219650649be001c382063df4, type: 2}
-  - quantity: 1
-    item: {fileID: 11400000, guid: 8d308dad9675f1a4fa5c15b5f7aab35f, type: 2}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 0
+    item: {fileID: 0}
   - quantity: 0
     item: {fileID: 0}
   - quantity: 0
