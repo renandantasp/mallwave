@@ -12,6 +12,10 @@ namespace Inventory
         private InventoryPage inventoryUI;
 
         [SerializeField]
+        private AudioClip clickSound, openSound, equipSound, closeSound;
+        private AudioSource audioSrc;
+
+        [SerializeField]
         private InventorySO inventoryData;
 
         [HideInInspector]
@@ -22,6 +26,7 @@ namespace Inventory
         {
             PrepareUI();
             PrepareInventoryData();
+            audioSrc = GetComponent<AudioSource>();
         }
 
         private void PrepareInventoryData()
@@ -58,6 +63,8 @@ namespace Inventory
             }
             ItemSO item = inventoryItem.item;
             inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
+            audioSrc.clip = clickSound;
+            audioSrc.Play();
         }
         private void HandleItemActionRequest(int itemIndex)
         {
@@ -67,6 +74,8 @@ namespace Inventory
             if (itemAction != null)
             {
                 itemAction.PerformAction(gameObject);
+                audioSrc.clip = equipSound;
+                audioSrc.Play();
             }
         }
 
@@ -87,11 +96,15 @@ namespace Inventory
                             item.Value.item.ItemImage,
                             item.Value.quantity);
                     }
+                    audioSrc.clip = openSound;
+                    audioSrc.Play();
                 }
                 else
                 {
                     inventoryUI.Hide();
                     isInventoryOpen = false;
+                    audioSrc.clip = openSound;
+                    audioSrc.Play();
                 }
             }
 
