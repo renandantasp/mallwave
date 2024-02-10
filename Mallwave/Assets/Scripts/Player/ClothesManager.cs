@@ -20,7 +20,6 @@ public class ClothesManager : MonoBehaviour
 
     public void SetClothes(EquipableItemSO item)
     {
-        Debug.Log("Equiping");
         itemsEquipped.clothEquipped = item;
         clothesRenderer.runtimeAnimatorController = itemsEquipped.clothEquipped.ClothAnimator;
 

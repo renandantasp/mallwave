@@ -7,14 +7,12 @@ namespace Inventory.Model
     {
         [field: SerializeField]
         public RuntimeAnimatorController ClothAnimator { get; set; }
-        public string ActionName => "Equip";
         public AudioClip ActionSFX {get; private set;}
 
         public void PerformAction(GameObject character)
         {
             ClothesManager manager = character.GetComponentInParent<ClothesManager>();
             manager.SetClothes(this);
-
         }
     }
 }

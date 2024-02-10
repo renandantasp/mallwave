@@ -89,8 +89,8 @@ public class ShopUIController : MonoBehaviour
         if (selectedItemIndex == -1) return;
         Item item = buyerData.GetItemAt(selectedItemIndex);
 
-        sellerData.AddItem(item.item, 1);
-        buyerData.RemoveItem(selectedItemIndex, 1);
+        sellerData.AddItem(item.item);
+        buyerData.RemoveItem(selectedItemIndex);
         if (this.isBuy)
         {
             playerData.Money -= item.item.Price;

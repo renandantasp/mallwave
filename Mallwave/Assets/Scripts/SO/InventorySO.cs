@@ -24,24 +24,14 @@ namespace Inventory.Model {
         }
         public int Money;
         public event Action<Dictionary<int, Item>> OnInventoryUpdated;
-        public void AddItem(ItemSO item, int quantity)
+        public void AddItem(ItemSO item, int quantity = 1)
         {
-            if (!item.IsStackable)
+            if(quantity > 0 && !IsInventoryFull())
             {
-                for (int i = 0; i < Size; i++)
-                {
-                    while(quantity > 0 && !IsInventoryFull())
-                    {
-                        quantity -= AddNonStackableItem(item, 1);
-                    }
-                    return;
-                   
-                }
+                AddNonStackableItem(item, 1);
             }
-            quantity = AddStackableItem(item, quantity);
-            //InformAboutChange();
-            return;
         }
+    
 
         private int AddNonStackableItem(ItemSO item, int quantity)
         {
@@ -63,7 +53,7 @@ namespace Inventory.Model {
             
         }
 
-        public void RemoveItem(int itemIndex, int quantity)
+        public void RemoveItem(int itemIndex, int quantity = 1)
         {
             if (inventoryItems.Count > 0)
             {
@@ -80,21 +70,6 @@ namespace Inventory.Model {
 
         private bool IsInventoryFull() =>
            inventoryItems.Where(item => item.IsEmpty).Any() == false;
-
-
-        private int AddStackableItem(ItemSO item, int quantity)
-        {
-            for (int i = 0; i < inventoryItems.Count; i++)
-            {
-                if (item.ID == inventoryItems[i].item.ID)
-                {
-                    inventoryItems[i].ChangeQuantity(quantity + inventoryItems[i].quantity);
-                    InformAboutChange();
-                    return 0;
-                }
-            }
-            return quantity;
-        }
 
         public Dictionary<int, Item> GetCurrentInventoryState()
         {
