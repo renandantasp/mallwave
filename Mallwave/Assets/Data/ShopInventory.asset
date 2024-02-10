@@ -15,10 +15,10 @@ MonoBehaviour:
   inventoryItems:
   - quantity: 1
     item: {fileID: 11400000, guid: 1b681bda219650649be001c382063df4, type: 2}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
+  - quantity: 1
+    item: {fileID: 11400000, guid: 4abdd47dc22a865409c8dce1087c5156, type: 2}
+  - quantity: 1
+    item: {fileID: 11400000, guid: a3e80e79744bca34fa7349a04fbb5813, type: 2}
   - quantity: 0
     item: {fileID: 0}
   - quantity: 0

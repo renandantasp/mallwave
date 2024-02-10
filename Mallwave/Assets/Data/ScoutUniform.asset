@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cd336080901c446995ed4ac84f1982, type: 3}
   m_Name: ScoutUniform
   m_EditorClassIdentifier: 
-  <IsStackable>k__BackingField: 0
   <Name>k__BackingField: Scout Uniform
   <Price>k__BackingField: 150
   <Description>k__BackingField: A slightly used scout uniform, really beautiful for
     those who see it from afar
   <ItemImage>k__BackingField: {fileID: -196352059, guid: 7bf66e60b83931d44a85831502962886, type: 3}
-  <ClothAnimator>k__BackingField: {fileID: 9100000, guid: 8934767be0ca29443b4e4eaca57b5a69, type: 2}
+  <itemAnimator>k__BackingField: {fileID: 9100000, guid: 8934767be0ca29443b4e4eaca57b5a69, type: 2}
+  itemType: 0

@@ -63,9 +63,9 @@ public class ShopUIController : MonoBehaviour
         inventoryUI.ResetAllItems();
         foreach (var item in buyerData.GetCurrentInventoryState())
         {
-            inventoryUI.UpdateData(item.Key,
-                item.Value.item.ItemImage,
-                item.Value.quantity);
+                inventoryUI.UpdateData(item.Key,
+                    item.Value.item.ItemImage,
+                    item.Value.quantity);
         }
     }
 
@@ -88,7 +88,6 @@ public class ShopUIController : MonoBehaviour
     {
         if (selectedItemIndex == -1) return;
         Item item = buyerData.GetItemAt(selectedItemIndex);
-
         sellerData.AddItem(item.item);
         buyerData.RemoveItem(selectedItemIndex);
         if (this.isBuy)

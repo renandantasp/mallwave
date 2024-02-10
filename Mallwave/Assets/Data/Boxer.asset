@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cd336080901c446995ed4ac84f1982, type: 3}
   m_Name: Boxer
   m_EditorClassIdentifier: 
-  <IsStackable>k__BackingField: 0
   <Name>k__BackingField: Boxer
   <Price>k__BackingField: 50
   <Description>k__BackingField: A brand new white boxer, but its a bit unconfortable
     getting outside wearing just this piece of clothing.
   <ItemImage>k__BackingField: {fileID: 509856255, guid: d7661df08f00d2b40b621bd7de00db4b, type: 3}
-  <ClothAnimator>k__BackingField: {fileID: 9100000, guid: 5be71d947460b2040bc428c3a938c894, type: 2}
+  <itemAnimator>k__BackingField: {fileID: 9100000, guid: 5be71d947460b2040bc428c3a938c894, type: 2}
+  itemType: 0

@@ -34,4 +34,4 @@ MonoBehaviour:
   - quantity: 0
     item: {fileID: 0}
   <Size>k__BackingField: 10
-  Money: 100
+  Money: 1000

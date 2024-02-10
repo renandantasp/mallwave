@@ -8,13 +8,13 @@ namespace Inventory.Model
         public int ID => GetInstanceID();
 
         [field: SerializeField]
-        public bool IsStackable { get; set; }
-
-        [field: SerializeField]
         public string Name { get; set; }
 
         [field: SerializeField]
         public int Price { get; set; }
+
+        [HideInInspector]
+        public bool CanSell { get; set; }
 
         [field: SerializeField]
         [field: TextArea]
@@ -23,5 +23,5 @@ namespace Inventory.Model
         [field: SerializeField]
         public Sprite ItemImage { get; set; }
 
-    }
+    }   
 }

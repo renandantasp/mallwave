@@ -16,8 +16,11 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("isWalking", manager.AnimVariables.isWalking);
-        animator.SetFloat("Horizontal", manager.AnimVariables.horizontal);
-        animator.SetFloat("Vertical", manager.AnimVariables.vertical);
+        if (animator.runtimeAnimatorController != null) 
+        {
+            animator.SetBool("isWalking", manager.AnimVariables.isWalking);
+            animator.SetFloat("Horizontal", manager.AnimVariables.horizontal);
+            animator.SetFloat("Vertical", manager.AnimVariables.vertical);
+        }
     }
 }

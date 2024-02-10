@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cd336080901c446995ed4ac84f1982, type: 3}
+  m_Name: MagicHat
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Magic Hat
+  <Price>k__BackingField: 400
+  <Description>k__BackingField: A magic hat that gives misterious powers
+  <ItemImage>k__BackingField: {fileID: 529053051, guid: 7d739593f1e123b47aae167f8393b327, type: 3}
+  <itemAnimator>k__BackingField: {fileID: 9100000, guid: 051697f21f90f3b4899a9e7c9458fc7e, type: 2}
+  itemType: 2

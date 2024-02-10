@@ -52,7 +52,6 @@ namespace Inventory.UI
             }
 
         }
-
   
         private void HandleShowItemActions(InventoryItem item)
         {
@@ -94,6 +93,14 @@ namespace Inventory.UI
             foreach (InventoryItem item in _items)
             {
                 item.Deselect();
+            }
+        }
+
+        private void UnequipAllItems()
+        {
+            foreach (InventoryItem item in _items)
+            {
+                item.Unequip();
             }
         }
 

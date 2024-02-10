@@ -20,6 +20,9 @@ namespace Inventory.UI
         private Image _borderImg;
 
         [SerializeField]
+        private Image _equipCheck;
+
+        [SerializeField]
         private InventoryDescription _inventoryDescription;
 
         public event Action<InventoryItem> OnItemClicked,
@@ -30,6 +33,7 @@ namespace Inventory.UI
         {
             ResetData();
             Deselect();
+            Unequip();
         }
 
         public void Deselect()
@@ -39,6 +43,14 @@ namespace Inventory.UI
         public void Select()
         {
             _borderImg.enabled = true;
+        }
+        public void Equip()
+        {
+            _equipCheck.enabled = true;
+        }
+        public void Unequip()
+        {
+            _equipCheck.enabled = false;
         }
 
         public void ResetData()
