@@ -1,4 +1,5 @@
 using Inventory.Model;
+using Unity.Mathematics;
 using UnityEngine;
 
 
@@ -19,7 +20,7 @@ public class Interactor : MonoBehaviour
     void Start()
     {
         canInteract = false;
-        shopkeeperPage.gameObject.SetActive(false);
+        shopkeeperPage.Hide();
     }
 
     void Update()
@@ -34,30 +35,33 @@ public class Interactor : MonoBehaviour
         }
     }
 
-    private void CloseDialog()
+    public void CloseDialog()
     {
         playerManager.DisableTalk();
-        shopkeeperPage.gameObject.SetActive(false);
+        shopkeeperPage.Hide();
         shopUI.Hide();
     }
 
     private void OpenDialog()
     {
-        playerManager.EnableTalk();
-        shopkeeperPage.gameObject.SetActive(true);
+        if (shopkeeperPage.Show())
+        {
+            playerManager.EnableTalk();
+        }
     }
 
     public void OnClickBuy()
     {
+        shopkeeperPage.Hide();
         shopUIController.Setup(true);
-        shopkeeperPage.gameObject.SetActive(false);
 
     }
 
     public void OnClickSell()
     {
+        shopkeeperPage.Hide();
         shopUIController.Setup(false);
-        shopkeeperPage.gameObject.SetActive(false);
+
 
     }
 

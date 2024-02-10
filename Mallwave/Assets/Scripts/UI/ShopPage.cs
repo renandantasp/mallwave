@@ -9,6 +9,13 @@ public class ShopPage : InventoryPage
 {
     [SerializeField]
     private ShopDescription shopDescription;
+    public Interactor interactor;
+       
+
+    public void CloseDialog()
+    {
+        interactor.CloseDialog();
+    }
     internal void UpdateButton(bool isBuy)
     {
         if (isBuy)

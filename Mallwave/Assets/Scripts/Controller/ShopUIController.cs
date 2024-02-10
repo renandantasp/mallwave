@@ -1,3 +1,4 @@
+using Inventory;
 using Inventory.Model;
 using Inventory.UI;
 using System;
@@ -28,6 +29,7 @@ public class ShopUIController : MonoBehaviour
     private void Start()
     {
         inventoryUI.Hide();
+        inventoryUI.InitializeInventory(10);
         inventoryUI.OnDescriptionRequested += HandleDescription;
     }
     public void Setup(bool isBuy)
@@ -45,17 +47,16 @@ public class ShopUIController : MonoBehaviour
             buyerData = playerData;
             sellerData = shopkeeperData;
         }
-        inventoryUI.UpdateButton(this.isBuy);
-        inventoryUI.ResetAllItems();
-        PrepareUI();
-        UpdateInventoryState();
-        inventoryUI.Show();
+        if (inventoryUI.Show())
+        {
+            inventoryUI.UpdateButton(this.isBuy);
+            inventoryUI.ResetAllItems();;
+            UpdateInventoryState();
+
+        }
 
     }
-    private void PrepareUI()
-    {
-        inventoryUI.InitializeInventory(buyerData.Size);
-    }
+
 
     public void UpdateInventoryState()
     {

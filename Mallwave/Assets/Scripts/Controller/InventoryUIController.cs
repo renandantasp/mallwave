@@ -19,11 +19,13 @@ namespace Inventory
         private InventorySO inventoryData;
 
         [HideInInspector]
-        public bool isInventoryOpen = false;
+        public bool isInventoryOpen;
+
 
 
         void Start()
         {
+            this.isInventoryOpen = false;
             PrepareUI();
             PrepareInventoryData();
             audioSrc = GetComponent<AudioSource>();
@@ -34,7 +36,7 @@ namespace Inventory
             inventoryData.OnInventoryUpdated += UpdateInventoryUI;
         }
 
-        private void UpdateInventoryUI(Dictionary<int, Item> inventoryState)
+        public void UpdateInventoryUI(Dictionary<int, Item> inventoryState)
         {
 
             inventoryUI.ResetAllItems();
@@ -79,25 +81,29 @@ namespace Inventory
             }
         }
 
-
-
-
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
                 if (!inventoryUI.isActiveAndEnabled)
                 {
-                    inventoryUI.Show();
-                    isInventoryOpen = true;
-                    foreach (var item in inventoryData.GetCurrentInventoryState())
+                    if (inventoryUI.Show())
                     {
-                        inventoryUI.UpdateData(item.Key,
-                            item.Value.item.ItemImage,
-                            item.Value.quantity);
+                        isInventoryOpen = true;
+                        inventoryUI.ResetAllItems();
+                        foreach (var item in inventoryData.GetCurrentInventoryState())
+                        {
+                            inventoryUI.UpdateData(item.Key,
+                                item.Value.item.ItemImage,
+                                item.Value.quantity);
+                        }
+                        audioSrc.clip = openSound;
+                        audioSrc.Play();
+                    } else
+                    {
+
                     }
-                    audioSrc.clip = openSound;
-                    audioSrc.Play();
+                    
                 }
                 else
                 {

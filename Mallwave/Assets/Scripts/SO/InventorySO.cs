@@ -105,6 +105,7 @@ namespace Inventory.Model {
                 currState[i] = inventoryItems[i];
 
             }
+            Debug.Log(currState);
             return currState;
         }
 

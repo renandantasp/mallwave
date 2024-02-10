@@ -8603,6 +8603,7 @@ GameObject:
   - component: {fileID: 1727423855}
   - component: {fileID: 1727423854}
   - component: {fileID: 1727423853}
+  - component: {fileID: 1727423856}
   m_Layer: 5
   m_Name: InGameMenu
   m_TagString: Untagged
@@ -8697,6 +8698,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727423851}
   m_CullTransparentMesh: 1
+--- !u!114 &1727423856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727423851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b637302b2008cc243b25e5077aadcf55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1733789612 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2006629333585054485, guid: 271071aec558ef542b3496309278b440, type: 3}

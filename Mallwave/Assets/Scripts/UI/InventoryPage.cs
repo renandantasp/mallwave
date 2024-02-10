@@ -10,6 +10,9 @@ namespace Inventory.UI
         private InventoryItem _itemPrefab;
 
         [SerializeField]
+        private UIManager uiManager;
+
+        [SerializeField]
         private RectTransform _contentPanel;
 
         [SerializeField]
@@ -25,6 +28,7 @@ namespace Inventory.UI
         public void Awake()
         {
             Hide();
+            uiManager = GetComponentInParent<UIManager>();
         }
 
         public void InitializeInventory(int size)
@@ -66,11 +70,17 @@ namespace Inventory.UI
 
         }
 
-        public void Show()
+        public bool Show()
         {
-            gameObject.SetActive(true);
-            ResetSelection();
-            Debug.Log("Show");
+            Debug.Log(this.uiManager.hasAnyWindowOpen);
+            if (!this.uiManager.hasAnyWindowOpen)
+            {
+                this.uiManager.hasAnyWindowOpen = true;
+                gameObject.SetActive(true);
+                ResetSelection();
+                return true;
+            }
+            return false;
 
         }
 
@@ -90,6 +100,7 @@ namespace Inventory.UI
         public void Hide()
         {
             gameObject.SetActive(false);
+            this.uiManager.hasAnyWindowOpen = false;
         }
 
         public void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)

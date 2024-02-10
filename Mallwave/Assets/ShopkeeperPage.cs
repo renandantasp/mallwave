@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class ShopkeeperPage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public UIManager uiManager;
+    public bool Show()
     {
-        
+        if (!this.uiManager.hasAnyWindowOpen)
+        {
+            this.uiManager.hasAnyWindowOpen = true;
+            this.gameObject.SetActive(true);
+            return true;
+        }
+        return false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Hide()
     {
-        
+        this.gameObject.SetActive(false);
+        this.uiManager.hasAnyWindowOpen = false;
+
     }
 }

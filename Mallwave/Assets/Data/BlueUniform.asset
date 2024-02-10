@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cd336080901c446995ed4ac84f1982, type: 3}
+  m_Name: BlueUniform
+  m_EditorClassIdentifier: 
+  <IsStackable>k__BackingField: 0
+  <Name>k__BackingField: Scout Uniform
+  <Price>k__BackingField: 150
+  <Description>k__BackingField: A slightly used scout uniform, really beautiful for
+    those who see it from afar
+  <ItemImage>k__BackingField: {fileID: -196352059, guid: 7bf66e60b83931d44a85831502962886, type: 3}
+  <ClothAnimator>k__BackingField: {fileID: 9100000, guid: 8934767be0ca29443b4e4eaca57b5a69, type: 2}
